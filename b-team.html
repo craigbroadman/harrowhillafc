@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Team - Harrow Hill AFC</title>
+    <link rel="icon" type="image/png" href="images/crest.png">
+    <meta name="description" content="Fixtures, results, and league table for Harrow Hill AFC B Team.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'club-maroon': '#6a0e1a',
+                        'club-blue': '#a4c2de',
+                        'club-gold': '#d4af37',
+                        'club-navy': '#1a202c',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-club-navy text-gray-200 font-sans leading-normal tracking-normal">
+
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <main class="py-16 md:py-20 bg-club-navy">
+        <div class="container mx-auto px-4">
+            <div id="team-page-container" data-team-id="b-team">
+                <!-- Team content will be injected here by JS -->
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer and common sections will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/team.js"></script>
+</body>
+
+</html>

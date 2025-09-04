@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Committee - Harrow Hill AFC</title>
+    <link rel="icon" type="image/png" href="images/crest.png">
+    <meta name="description" content="The official list of club committee members for Harrow Hill AFC.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'club-maroon': '#6a0e1a',
+                        'club-blue': '#a4c2de',
+                        'club-gold': '#d4af37',
+                        'club-navy': '#1a202c',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-club-navy text-gray-200 font-sans leading-normal tracking-normal">
+
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <main class="py-16 md:py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Club Committee</h1>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">The dedicated volunteers who run the club
+                behind the scenes.</p>
+            <div id="committee-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Committee members will be dynamically injected here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer and common sections will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/committee.js"></script>
+</body>
+
+</html>

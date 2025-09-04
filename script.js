@@ -6,87 +6,48 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'firsts',
             name: 'First Team',
             league: 'Gloucestershire Northern Senior League Division 2',
-            lrcodes: {
-                fixtures: '813726653',
-                results: '377223783',
-                table: '677575511',
-                divisionseason: '462214142'
-            }
+            lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
         },
         {
             id: 'reserves',
             name: 'Reserves',
             league: 'North Glos Division 1',
-            lrcodes: {
-                fixtures: '813726653',
-                results: '377223783',
-                table: '677575511',
-                divisionseason: '462214142'
-            }
+            lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
         },
         {
             id: 'a-team',
             name: 'A Team',
             league: 'North Glos Division 2',
-            lrcodes: {
-                fixtures: '813726653',
-                results: '377223783',
-                table: '677575511',
-                divisionseason: '462214142'
-            }
+            lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
         },
         {
             id: 'b-team',
             name: 'B Team',
             league: 'North Glos Division 3',
-            lrcodes: {
-                fixtures: '813726653',
-                results: '377223783',
-                table: '677575511',
-                divisionseason: '462214142'
-            }
+            lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
         },
         {
             id: 'u11',
             name: 'U11 Youth Team',
             league: 'Severn Valley League',
-            lrcodes: {
-                fixtures: '813726653',
-                results: '377223783',
-                table: '677575511',
-                divisionseason: '462214142'
-            }
+            lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
         }
     ];
 
     const COMMITTEE_MEMBERS = [
-        { name: "Sean Thomas", role: "Chairman & GNSL Secretary" },
-        { name: "Barry Boseley", role: "Vice Chairman" },
-        { name: "Andy Davies", role: "NGL Secretary" },
-        { name: "Kenny Mason", role: "Club Treasurer" },
-        { name: "Paul Jones", role: "Football Treasurer" },
-        { name: "Jo White", role: "Welfare Officer" },
-        { name: "Shaun Poole", role: "1st Team Manager" },
-        { name: "Craig Broadman", role: "Reserve Team Manager" },
-        { name: "Jody Taylor", role: "A Team Manager" },
-        { name: "Royston Baldwin", role: "B Team Manager" },
-        { name: "Liam Davies", role: "Youth Team" },
-        { name: "Roger Beckett", role: "Committee Member" },
-        { name: "Matthew Boseley", role: "Committee Member" },
-        { name: "Dan Boseley", role: "Committee Member" },
-        { name: "Donna Boseley", role: "Committee Member" },
-        { name: "Ben Carruthers", role: "Committee Member" },
-        { name: "Jade Davies", role: "Committee Member" },
-        { name: "Nick Hopkins", role: "Committee Member" },
-        { name: "Jordan Howard", role: "Committee Member" },
-        { name: "Meg Lewis", role: "Committee Member" },
-        { name: "Jack Mason", role: "Committee Member" },
-        { name: "Hayley Morgan", role: "Committee Member" },
-        { name: "Claire Partridge", role: "Committee Member" },
-        { name: "Sammy Taylor", role: "Committee Member" },
+        { name: "Sean Thomas", role: "Chairman & GNSL Secretary" }, { name: "Barry Boseley", role: "Vice Chairman" },
+        { name: "Andy Davies", role: "NGL Secretary" }, { name: "Kenny Mason", role: "Club Treasurer" },
+        { name: "Paul Jones", role: "Football Treasurer" }, { name: "Jo White", role: "Welfare Officer" },
+        { name: "Shaun Poole", role: "1st Team Manager" }, { name: "Craig Broadman", role: "Reserve Team Manager" },
+        { name: "Jody Taylor", role: "A Team Manager" }, { name: "Royston Baldwin", role: "B Team Manager" },
+        { name: "Liam Davies", role: "Youth Team" }, { name: "Roger Beckett", role: "Committee Member" },
+        { name: "Matthew Boseley", role: "Committee Member" }, { name: "Dan Boseley", role: "Committee Member" },
+        { name: "Donna Boseley", role: "Committee Member" }, { name: "Ben Carruthers", role: "Committee Member" },
+        { name: "Jade Davies", role: "Committee Member" }, { name: "Nick Hopkins", role: "Committee Member" },
+        { name: "Jordan Howard", role: "Committee Member" }, { name: "Meg Lewis", role: "Committee Member" },
+        { name: "Jack Mason", role: "Committee Member" }, { name: "Hayley Morgan", role: "Committee Member" },
+        { name: "Claire Partridge", role: "Committee Member" }, { name: "Sammy Taylor", role: "Committee Member" },
     ];
-
-    // ...existing code...
 
     const SPONSORS = [
         { name: "GLS Windows", logo: "images/sponsors/glswindows.png", type: "Platinum" },
@@ -94,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Dean Electrical", logo: "images/sponsors/deanelectrical.png", type: "Platinum" },
         { name: "R&S Building Services Engineers", logo: "images/sponsors/rsbuildingservicesengineers.png", type: "Platinum" },
         { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png", type: "Platinum" },
-
         { name: "Severn Sport", logo: "images/sponsors/severnsport.png", type: "Standard" },
         { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png", type: "Standard" },
         { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw.png", type: "Standard" },
@@ -124,61 +84,114 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "MG Building Solutions", logo: "images/sponsors/mgbuildingsolutions.png", type: "Standard" },
         { name: "MTB Plumbing and Heating", logo: "images/sponsors/mtbplumbingandheating.png", type: "Standard" },
         { name: "The Looking Glass", logo: "images/sponsors/thelookingglass.png", type: "Standard" },
-
         { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png", type: "Youth" },
         { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", type: "Youth" },
         { name: "Cobus", logo: "images/sponsors/cobus.png", type: "Youth" },
         { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", type: "Youth" },
     ];
 
-    // ...existing code...
+    // --- RENDER FUNCTIONS ---
 
-    // --- MOCK DATA GENERATION ---
-    const createMockResults = (teamName) => {
-        const opponents = ["Rivals FC", "Local Rovers", "United City", "County Town"];
-        return Array(5).fill(null).map((_, i) => ({
-            homeTeam: i % 2 === 0 ? teamName : opponents[i % 4],
-            awayTeam: i % 2 !== 0 ? teamName : opponents[i % 4],
-            homeScore: Math.floor(Math.random() * 5),
-            awayScore: Math.floor(Math.random() * 5),
-            date: `2025-08-${23 - i * 7}`
-        }));
-    };
+    function renderCommittee(container) {
+        const mainRoles = ["Chairman", "Vice Chairman", "Treasurer", "Welfare Officer", "Secretary"];
+        const managerRoles = ["Manager", "Youth Team"];
+        const isMainRole = member => mainRoles.some(role => member.role.toLowerCase().includes(role.toLowerCase()));
+        const isManager = member => managerRoles.some(role => member.role.toLowerCase().includes(role.toLowerCase()));
+        const isOther = member => !isMainRole(member) && !isManager(member);
 
-    const createMockLeagueTable = (teamName) => {
-        const teams = [teamName, "Rivals FC", "Local Rovers", "United City", "County Town", "Another Team", "Village XI", "Borough United"];
-        return teams.map((name, i) => ({
-            pos: i + 1,
-            name,
-            p: 10,
-            w: Math.floor(Math.random() * 10),
-            d: Math.floor(Math.random() * (10 - (i === 0 ? 5 : 0))),
-            l: Math.floor(Math.random() * 3),
-            gd: Math.floor(Math.random() * 20) - 10,
-            pts: Math.floor(Math.random() * 30)
-        })).sort((a, b) => b.pts - a.pts).map((team, i) => ({ ...team, pos: i + 1 }));
-    };
+        const mainRoleMembers = COMMITTEE_MEMBERS.filter(isMainRole);
+        const managerMembers = COMMITTEE_MEMBERS.filter(isManager);
+        const otherMembers = COMMITTEE_MEMBERS.filter(isOther);
 
+        function renderSection(title, members) {
+            if (members.length === 0) return '';
+            let html = `<div class="col-span-full"><h3 class="text-2xl font-bold text-club-gold mb-4 mt-6 border-b border-gray-700 pb-2">${title}</h3></div>`;
+            members.forEach(member => {
+                html += `
+                    <div class="bg-gray-700 rounded-lg shadow-lg p-6 text-center">
+                        <h4 class="text-xl font-bold text-white">${member.name}</h4>
+                        <p class="text-club-gold">${member.role}</p>
+                    </div>
+                `;
+            });
+            return html;
+        }
 
-    // --- DYNAMIC CONTENT INJECTION ---
+        container.innerHTML =
+            renderSection("Main Roles", mainRoleMembers) +
+            renderSection("Team Management", managerMembers) +
+            renderSection("Committee Members", otherMembers);
+    }
 
-    const teamsContainer = document.getElementById('teams-container');
-    const committeeGrid = document.getElementById('committee-grid');
-    const sponsorsGridPlatinum = document.getElementById('sponsors-grid-platinum');
-    const sponsorsGridOthers = document.getElementById('sponsors-grid-others');
-    const teamsDropdownDesktop = document.getElementById('teams-dropdown-desktop');
-    const teamsDropdownMobile = document.getElementById('teams-dropdown-mobile');
+    function renderSponsors(platinumContainer, othersContainer) {
+        platinumContainer.innerHTML = "";
+        othersContainer.innerHTML = "";
 
-    // Populate Teams Section
-    if (teamsContainer) {
+        const platinumSponsors = SPONSORS.filter(s => s.type === "Platinum");
+        platinumSponsors.forEach(sponsor => {
+            const div = document.createElement('div');
+            div.className = "flex flex-col items-center";
+            div.innerHTML = `<img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-24 md:max-h-32 mb-1" style="object-fit:contain;">`;
+            platinumContainer.appendChild(div);
+        });
+
+        const otherSponsors = SPONSORS.filter(s => s.type !== "Platinum");
+        otherSponsors.forEach(sponsor => {
+            const div = document.createElement('div');
+            div.className = "flex flex-col items-center";
+            div.innerHTML = `<img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-10 md:max-h-14 mb-1" style="object-fit:contain;">`;
+            othersContainer.appendChild(div);
+        });
+    }
+
+    function renderTeamNav(desktopContainer, mobileContainer) {
+        let teamLinks = '';
+        const pageMap = {
+            'firsts': 'first-team.html',
+            'reserves': 'reserve-team.html',
+            'a-team': 'a-team.html',
+            'b-team': 'b-team.html',
+            'u11': 'u11-team.html',
+        };
         TEAMS.forEach(team => {
-            const teamSection = document.createElement('div');
-            teamSection.id = `team-${team.id}`;
-            teamSection.className = 'bg-gray-800 rounded-lg shadow-xl p-6 md:p-8';
-            teamSection.innerHTML = `
+            teamLinks += `<a href="${pageMap[team.id]}" class="block px-4 py-2 text-sm hover:bg-gray-700">${team.name}</a>`;
+        });
+        desktopContainer.innerHTML = teamLinks;
+        mobileContainer.innerHTML = teamLinks;
+    }
+
+    function renderHomeTeamCards(container) {
+        const pageMap = {
+            'firsts': 'first-team.html',
+            'reserves': 'reserve-team.html',
+            'a-team': 'a-team.html',
+            'b-team': 'b-team.html',
+            'u11': 'u11-team.html',
+        };
+        TEAMS.forEach(team => {
+            const card = document.createElement('a');
+            card.href = pageMap[team.id];
+            card.className = "block bg-gray-800 rounded-lg shadow-xl p-6 text-center hover:bg-gray-700 hover:scale-105 transform transition-all duration-300";
+            card.innerHTML = `
+                <h3 class="text-xl font-bold text-white">${team.name}</h3>
+                <p class="text-club-gold mt-1">${team.league}</p>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function renderTeamPage(container, teamId) {
+        const team = TEAMS.find(t => t.id === teamId);
+        if (!team) {
+            container.innerHTML = `<p class="text-center text-red-400">Team not found.</p>`;
+            return;
+        }
+
+        container.innerHTML = `
+            <div id="team-${team.id}" class="bg-gray-800 rounded-lg shadow-xl p-6 md:p-8">
                 <div class="text-center mb-8">
-                    <h3 class="text-2xl md:text-3xl font-bold text-white">${team.name}</h3>
-                    <p class="text-club-gold">${team.league}</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-white">${team.name}</h1>
+                    <p class="text-club-gold text-lg">${team.league}</p>
                 </div>
                 <div class="border-b border-gray-600 mb-6">
                     <nav class="-mb-px flex justify-center space-x-4 md:space-x-8" aria-label="Tabs">
@@ -188,252 +201,17 @@ document.addEventListener('DOMContentLoaded', () => {
                         <button data-team="${team.id}" data-tab="table" class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm md:text-base border-transparent text-gray-400 hover:text-gray-200 hover:border-gray-400">League Table</button>
                     </nav>
                 </div>
-                <div id="content-${team.id}" class="tab-content">
+                <div id="content-${team.id}" class="tab-content min-h-[400px]">
                     <!-- Tab content is injected here -->
                 </div>
-            `;
-            teamsContainer.appendChild(teamSection);
-        });
-    }
+            </div>`;
 
-    // Populate Committee Section
-    if (committeeGrid) {
-        // Define role groupings
-        const mainRoles = [
-            "Chairman", "Vice Chairman", "Treasurer", "Welfare Officer", "Secretary"
-        ];
-        const managerRoles = [
-            "Manager"
-        ];
-
-        // Helper functions to check role type
-        const isMainRole = member =>
-            mainRoles.some(role =>
-                member.role.toLowerCase().includes(role.toLowerCase())
-            );
-        const isManager = member =>
-            managerRoles.some(role =>
-                member.role.toLowerCase().includes(role.toLowerCase())
-            );
-        const isOther = member =>
-            !isMainRole(member) && !isManager(member);
-
-        // Filter members
-        const mainRoleMembers = COMMITTEE_MEMBERS.filter(isMainRole);
-        const managerMembers = COMMITTEE_MEMBERS.filter(isManager);
-        const otherMembers = COMMITTEE_MEMBERS.filter(isOther);
-
-        // Render section helper
-        function renderSection(title, members) {
-            if (members.length === 0) return '';
-            let html = `<div class="col-span-full"><h3 class="text-lg font-bold text-club-gold mb-2 mt-6">${title}</h3></div>`;
-            members.forEach(member => {
-                html += `
-                    <div class="bg-gray-700 rounded-lg shadow-lg p-6 text-center">
-                        <h3 class="text-xl font-bold text-white">${member.name}</h3>
-                        <p class="text-club-gold">${member.role}</p>
-                    </div>
-                `;
-            });
-            return html;
-        }
-
-        // Build the grid HTML
-        committeeGrid.innerHTML =
-            renderSection("Main Roles", mainRoleMembers) +
-            renderSection("Managers", managerMembers) +
-            renderSection("Other Committee Members", otherMembers);
-    }
-
-    // ...existing code...
-
-    if (sponsorsGridPlatinum) {
-        sponsorsGridPlatinum.innerHTML = "";
-
-        // --- Platinum Sponsors Bar ---
-        const platinumSponsors = SPONSORS.filter(s => s.type === "Platinum");
-        if (platinumSponsors.length > 0) {
-            platinumSponsors.forEach(sponsor => {
-                const div = document.createElement('div');
-                div.className = "flex flex-col items-center";
-                div.innerHTML = `
-    <img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-24 md:max-h-32 mb-1" style="object-fit:contain;">`;
-                sponsorsGridPlatinum.appendChild(div);
-            });
-            //sponsorsGridPlatinum.appendChild(platinumBar);
-        }
-
-        // --- Other Sponsors Grid ---
-        const otherSponsors = SPONSORS.filter(s => s.type !== "Platinum");
-        if (otherSponsors.length > 0) {
-
-            otherSponsors.forEach(sponsor => {
-                const div = document.createElement('div');
-                div.className = "flex flex-col items-center";
-                div.innerHTML = `
-    <img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-10 md:max-h-14 mb-1" style="object-fit:contain;">`;
-                sponsorsGridOthers.appendChild(div);
-            });
-
-        }
-    }
-
-    // Populate Teams Dropdown Menus
-    if (teamsDropdownDesktop && teamsDropdownMobile) {
-        let teamLinks = '';
-        TEAMS.forEach(team => {
-            teamLinks += `<a href="#team-${team.id}" class="block px-4 py-2 text-sm hover:bg-gray-700">
-                            ${team.name}
-                          </a>`;
-        });
-        teamsDropdownDesktop.innerHTML = teamLinks;
-        teamsDropdownMobile.innerHTML = teamLinks;
+        setupTabbedContent(team.id);
+        updateTabContent(team.id, 'info');
     }
 
 
-    // --- INTERACTIVITY ---
-
-    // Mobile Menu Toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-
-    // Teams Dropdown Toggle (Mobile)
-    const teamsMenuButtonMobile = document.getElementById('teams-menu-button-mobile');
-    const teamsDropdownMobileEl = document.getElementById('teams-dropdown-mobile');
-    const mobileChevron = teamsMenuButtonMobile.querySelector('svg');
-
-    teamsMenuButtonMobile.addEventListener('click', () => {
-        teamsDropdownMobileEl.classList.toggle('hidden');
-        mobileChevron.classList.toggle('rotate-180');
-    });
-
-    // Smooth Scrolling & Close Mobile Menu on Link Click
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-            // Close mobile menu if open
-            if (!mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.add('hidden');
-            }
-            // Close mobile teams dropdown if open
-            if (!teamsDropdownMobileEl.classList.contains('hidden')) {
-                teamsDropdownMobileEl.classList.add('hidden');
-                mobileChevron.classList.remove('rotate-180');
-            }
-        });
-    });
-
-    // --- TAB HANDLING LOGIC ---
-
-    function getFixturesContent(lrcode) {
-        // Use iframe to avoid script conflicts when loading multiple widgets
-        const iframeSrc = `https://fulltime.thefa.com/client/api/cs1.html?lc=${lrcode}&col=1,2,3,4&text_col=000000&bg_col=FFFFFF&border=1`;
-        return `<div class="bg-white rounded-lg overflow-hidden">
-                    <iframe src="${iframeSrc}" style="width: 100%; min-height: 400px; border: none;" title="Fixtures Widget"></iframe>
-                </div>`;
-    }
-
-    function getResultsContent(teamId) {
-        const team = TEAMS.find(t => t.id === teamId);
-        const results = createMockResults(team.name);
-        let html = '<div class="space-y-4">';
-        results.forEach(result => {
-            const homeWin = result.homeScore > result.awayScore;
-            const awayWin = result.awayScore > result.homeScore;
-            const homeClasses = result.homeTeam === team.name ? 'font-bold text-white' : 'text-gray-300';
-            const awayClasses = result.awayTeam === team.name ? 'font-bold text-white' : 'text-gray-300';
-
-            html += `
-                <div class="bg-gray-700 p-4 rounded-lg flex items-center justify-between">
-                    <span class="w-2/5 text-right ${homeClasses}">${result.homeTeam}</span>
-                    <span class="mx-3 text-center bg-gray-900 px-3 py-1 rounded-md text-lg font-mono">
-                      ${result.homeScore} - ${result.awayScore}
-                    </span>
-                    <span class="w-2/5 text-left ${awayClasses}">${result.awayTeam}</span>
-                </div>
-            `;
-        });
-        html += '</div>';
-        return html;
-    }
-
-    function getTableContent(teamId) {
-        const team = TEAMS.find(t => t.id === teamId);
-        const tableData = createMockLeagueTable(team.name);
-        let html = `
-            <div class="overflow-x-auto rounded-lg">
-                <table class="min-w-full bg-gray-700 text-sm">
-                    <thead class="bg-gray-900 text-gray-300 uppercase">
-                        <tr>
-                            <th class="py-3 px-2 md:px-4 text-left">Pos</th>
-                            <th class="py-3 px-2 md:px-4 text-left">Team</th>
-                            <th class="py-3 px-2 md:px-4 text-center">P</th>
-                            <th class="py-3 px-2 md:px-4 text-center">W</th>
-                            <th class="py-3 px-2 md:px-4 text-center">D</th>
-                            <th class="py-3 px-2 md:px-4 text-center">L</th>
-                            <th class="py-3 px-2 md:px-4 text-center">GD</th>
-                            <th class="py-3 px-2 md:px-4 text-center">Pts</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-gray-200">
-        `;
-        tableData.forEach(row => {
-            const isHomeTeam = row.name === team.name;
-            const rowClass = isHomeTeam ? 'bg-club-blue bg-opacity-20 font-bold' : '';
-            html += `
-                        <tr class="${rowClass} border-t border-gray-600">
-                            <td class="py-3 px-2 md:px-4">${row.pos}</td>
-                            <td class="py-3 px-2 md:px-4">${row.name}</td>
-                            <td class="py-3 px-2 md:px-4 text-center">${row.p}</td>
-                            <td class="py-3 px-2 md:px-4 text-center">${row.w}</td>
-                            <td class="py-3 px-2 md:px-4 text-center">${row.d}</td>
-                            <td class="py-3 px-2 md:px-4 text-center">${row.l}</td>
-                            <td class="py-3 px-2 md:px-4 text-center">${row.gd}</td>
-                            <td class="py-3 px-2 md:px-4 text-center font-bold">${row.pts}</td>
-                        </tr>
-            `;
-        });
-        html += `
-                    </tbody>
-                </table>
-            </div>
-        `;
-        return html;
-    }
-
-    function loadFAWidget(lrcode, divisionseason, container) {
-        // Clear previous content
-        container.innerHTML = `
-        <div id="lrep${lrcode}">
-            Data loading....<a href="https://fulltime.thefa.com/index.html?divisionseason=${divisionseason}">click here for Division</a><br/><br/>
-            <a href="http://www.thefa.com/FULL-TIME">FULL-TIME Home</a>
-        </div>
-    `;
-
-        // Set global lrcode variable
-        window.lrcode = lrcode;
-
-        // Remove any previous FA widget script
-        const oldScript = document.getElementById('fa-widget-script');
-        if (oldScript) oldScript.remove();
-
-        // Dynamically add the FA widget script
-        const script = document.createElement('script');
-        script.id = 'fa-widget-script';
-        script.src = 'https://fulltime.thefa.com/client/api/cs1.js';
-        script.async = true;
-        container.appendChild(script);
-    }
+    // --- TAB CONTENT & LOGIC ---
 
     function getInfoContent(team) {
         return `
@@ -441,8 +219,23 @@ document.addEventListener('DOMContentLoaded', () => {
             <h4 class="text-xl font-bold text-white mb-2">${team.name}</h4>
             <p class="text-club-gold mb-2">${team.league}</p>
             <p class="text-gray-300">Welcome to the ${team.name} page. Here you can find fixtures, results, and the current league table for this team.</p>
-        </div>
-    `;
+        </div>`;
+    }
+
+    function loadFAWidget(lrcode, divisionseason, container) {
+        container.innerHTML = `
+        <div id="lrep${lrcode}" class="bg-white rounded-lg p-2 text-gray-800">
+            Data loading from The FA... If it does not appear, you can 
+            <a href="https://fulltime.thefa.com/index.html?divisionseason=${divisionseason}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">click here to view on the FA website</a>.
+        </div>`;
+        window.lrcode = lrcode;
+        const oldScript = document.getElementById('fa-widget-script');
+        if (oldScript) oldScript.remove();
+        const script = document.createElement('script');
+        script.id = 'fa-widget-script';
+        script.src = 'https://fulltime.thefa.com/client/api/cs1.js';
+        script.async = true;
+        document.body.appendChild(script);
     }
 
     function updateTabContent(teamId, tabType) {
@@ -455,41 +248,96 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (team.lrcodes && team.lrcodes[tabType]) {
             loadFAWidget(team.lrcodes[tabType], team.lrcodes.divisionseason, contentDiv);
         } else {
-            // Fallback to mock data if no lrcode
-            if (tabType === 'fixtures') {
-                contentDiv.innerHTML = getFixturesContent(team.lrcode);
-            } else if (tabType === 'results') {
-                contentDiv.innerHTML = getResultsContent(teamId);
-            } else if (tabType === 'table') {
-                contentDiv.innerHTML = getTableContent(teamId);
-            }
+            contentDiv.innerHTML = `<p class="text-center text-gray-400">Data not available for this section.</p>`;
         }
     }
 
-    document.querySelectorAll('.tab-button').forEach(button => {
-        button.addEventListener('click', () => {
-            const teamId = button.dataset.team;
-            const tabType = button.dataset.tab;
-
-            // Update button styles
-            document.querySelectorAll(`.tab-button[data-team="${teamId}"]`).forEach(btn => {
-                btn.classList.remove('border-club-gold', 'text-club-gold');
-                btn.classList.add('border-transparent', 'text-gray-400', 'hover:text-gray-200', 'hover:border-gray-400');
+    function setupTabbedContent(teamId) {
+        const tabButtons = document.querySelectorAll(`.tab-button[data-team="${teamId}"]`);
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabType = button.dataset.tab;
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('border-club-gold', 'text-club-gold');
+                    btn.classList.add('border-transparent', 'text-gray-400');
+                });
+                button.classList.add('border-club-gold', 'text-club-gold');
+                button.classList.remove('border-transparent', 'text-gray-400');
+                updateTabContent(teamId, tabType);
             });
-            button.classList.add('border-club-gold', 'text-club-gold');
-            button.classList.remove('border-transparent', 'text-gray-400', 'hover:text-gray-200', 'hover:border-gray-400');
-
-            // Update content
-            updateTabContent(teamId, tabType);
         });
-    });
+    }
 
-    // Initial load for all teams' first tab (info)
-    TEAMS.forEach(team => {
-        updateTabContent(team.id, 'info');
-    });
+    // --- INTERACTIVITY & SETUP ---
 
-    // Set Copyright Year
+    function setupHeaderInteraction() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const teamsMenuButtonMobile = document.getElementById('teams-menu-button-mobile');
+        const teamsDropdownMobileEl = document.getElementById('teams-dropdown-mobile');
+        const mobileChevron = teamsMenuButtonMobile.querySelector('svg');
+
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        teamsMenuButtonMobile.addEventListener('click', () => {
+            teamsDropdownMobileEl.classList.toggle('hidden');
+            mobileChevron.classList.toggle('rotate-180');
+        });
+    }
+
+    function setupSmoothScrollingAndNav() {
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // Handle smooth scroll for on-page anchors
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+                // Close mobile menu after any link click
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    }
+
+
+    // --- MAIN EXECUTION ---
+
+    // SHARED SETUP (RUNS ON EVERY PAGE)
+    const teamsDropdownDesktop = document.getElementById('teams-dropdown-desktop');
+    const teamsDropdownMobile = document.getElementById('teams-dropdown-mobile');
+    const sponsorsGridPlatinum = document.getElementById('sponsors-grid-platinum');
+    const sponsorsGridOthers = document.getElementById('sponsors-grid-others');
+
+    if (teamsDropdownDesktop && teamsDropdownMobile) {
+        renderTeamNav(teamsDropdownDesktop, teamsDropdownMobile);
+    }
+    if (sponsorsGridPlatinum && sponsorsGridOthers) {
+        renderSponsors(sponsorsGridPlatinum, sponsorsGridOthers);
+    }
+
+    setupHeaderInteraction();
+    setupSmoothScrollingAndNav();
     document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
+    // PAGE-SPECIFIC SETUP
+    const committeeGrid = document.getElementById('committee-grid');
+    const teamPageContainer = document.getElementById('team-page-container');
+    const homeTeamsOverview = document.getElementById('teams-overview-container');
+
+    if (committeeGrid) {
+        renderCommittee(committeeGrid);
+    }
+    if (teamPageContainer) {
+        renderTeamPage(teamPageContainer, teamPageContainer.dataset.teamId);
+    }
+    if (homeTeamsOverview) {
+        renderHomeTeamCards(homeTeamsOverview);
+    }
 });
