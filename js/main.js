@@ -90,150 +90,33 @@ window.SPONSORS = [
 ];
 
 
-// --- HTML COMPONENTS ---
-
-const HEADER_HTML = `
-<header id="header" class="bg-gray-900 sticky top-0 z-50 transition-shadow duration-300 shadow-lg">
-    <nav class="container mx-auto p-4 flex justify-between items-center">
-        <a href="index.html" class="flex items-center space-x-3">
-            <img src="images/crest.png" alt="Harrow Hill AFC Club Crest" class="h-12 w-12">
-            <span class="text-xl font-bold text-white">Harrow Hill AFC</span>
-        </a>
-
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center space-x-6">
-            <div class="relative group">
-                <button id="teams-menu-button-desktop"
-                    class="text-gray-300 hover:text-white transition duration-300 flex items-center">
-                    Teams
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                        </path>
-                    </svg>
-                </button>
-                <div id="teams-dropdown-desktop"
-                    class="absolute left-0 top-full hidden bg-gray-800 text-gray-300 rounded-md shadow-lg w-48 py-2 z-20 group-hover:block">
-                    <!-- Team links will be injected here by JS -->
-                </div>
-            </div>
-            <a href="committee.html" class="text-gray-300 hover:text-white transition duration-300">Committee</a>
-            <a href="safeguarding.html" class="text-gray-300 hover:text-white transition duration-300">Safeguarding</a>
-            <a href="#socials" class="text-gray-300 hover:text-white transition duration-300">Socials</a>
-            <a href="#sponsors" class="text-gray-300 hover:text-white transition duration-300">Sponsors</a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-            <button id="mobile-menu-button" class="text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
-        <div class="relative">
-            <button id="teams-menu-button-mobile"
-                class="w-full text-left text-gray-300 hover:text-white transition duration-300 flex items-center justify-between py-2">
-                Teams
-                <svg class="w-4 h-4 ml-1 transform transition-transform duration-300" fill="none"
-                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-            </button>
-            <div id="teams-dropdown-mobile"
-                class="hidden bg-gray-700 text-gray-300 rounded-md shadow-lg mt-2 w-full py-2">
-                <!-- Mobile team links will be injected here by JS -->
-            </div>
-        </div>
-        <a href="committee.html" class="block text-gray-300 hover:text-white transition duration-300 py-2">Committee</a>
-        <a href="safeguarding.html"
-            class="block text-gray-300 hover:text-white transition duration-300 py-2">Safeguarding</a>
-        <a href="#socials" class="block text-gray-300 hover:text-white transition duration-300 py-2">Socials</a>
-        <a href="#sponsors" class="block text-gray-300 hover:text-white transition duration-300 py-2">Sponsors</a>
-    </div>
-</header>`;
-
-const FOOTER_HTML = `
-<!-- Socials Section -->
-<section id="socials" class="py-16 md:py-20 bg-gray-800">
-    <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Follow Our Socials</h2>
-        <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Stay up-to-date with the latest news, matchday updates,
-            and behind-the-scenes content.</p>
-        <div class="flex justify-center items-center p-6 bg-white rounded-lg shadow-md max-w-lg mx-auto">
-            <img src="images/crest.png" alt="Club Crest"
-                class="h-16 w-16 rounded-full mr-4 border-2 border-gray-200">
-            <div class="text-left">
-                <h3 class="font-bold text-lg text-gray-900">Harrow Hill AFC</h3>
-                <p class="text-gray-600">Official Club Account</p>
-                <a href="https://www.facebook.com/HarrowHillAFC/" target="_blank" rel="noopener noreferrer"
-                    class="text-blue-600 hover:underline">Follow us on Facebook</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sponsors Section -->
-<section id="sponsors" class="py-16 md:py-20 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Sponsors</h2>
-        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">A huge thank you to our sponsors for their invaluable
-            support. Please support the businesses that support us.</p>
-        <div id="sponsors-grid-platinum"
-            class="flex flex-wrap justify-center gap-8 bg-white border-t-4 border-b-4"
-            style="border-color: #ba963e; padding: 1.5rem 0; margin-bottom: 30px;">
-            <!-- Sponsor logos will be dynamically injected here -->
-        </div>
-
-        <div id="sponsors-grid-others" class="flex flex-wrap justify-center gap-8 items-center">
-            <!-- Sponsor logos will be dynamically injected here -->
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-white">
-    <div class="container mx-auto py-8 px-4 text-center">
-        <div class="flex justify-center space-x-6 mb-4">
-            <a href="https://www.facebook.com/HarrowHillAFC/" target="_blank" rel="noopener noreferrer"
-                aria-label="Facebook" class="text-gray-400 hover:text-white transition duration-300">
-                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.494v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
-                </svg>
-            </a>
-            <a href="https://x.com/HarrowHillFC" target="_blank" rel="noopener noreferrer" aria-label="X"
-                class="text-gray-400 hover:text-white transition duration-300">
-                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-            </a>
-        </div>
-        <p class="text-gray-500">&copy; <span id="copyright-year"></span> Harrow Hill AFC. All Rights Reserved.</p>
-    </div>
-</footer>`;
-
-
 /**
- * Injects the header and footer HTML into their placeholder elements.
+ * Injects the header and footer HTML into their placeholder elements by fetching them from files.
  */
-function loadComponents() {
+async function loadComponents() {
     const headerPlaceholder = document.getElementById('header-placeholder');
     const footerPlaceholder = document.getElementById('footer-placeholder');
 
-    if (headerPlaceholder) {
-        headerPlaceholder.innerHTML = HEADER_HTML;
-    }
-    if (footerPlaceholder) {
-        footerPlaceholder.innerHTML = FOOTER_HTML;
-    }
+    const load = async (element, url) => {
+        if (!element) return;
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                element.innerHTML = await response.text();
+            } else {
+                element.innerHTML = `<p class="text-red-500 text-center">Error: Could not load ${url}.</p>`;
+                console.error(`Failed to load ${url}:`, response.status, response.statusText);
+            }
+        } catch (error) {
+            element.innerHTML = `<p class="text-red-500 text-center">Error: Failed to fetch ${url}.</p>`;
+            console.error(`Error fetching ${url}:`, error);
+        }
+    };
+    
+    await Promise.all([
+        load(headerPlaceholder, '_header.html'),
+        load(footerPlaceholder, '_footer.html')
+    ]);
 }
 
 
@@ -329,9 +212,9 @@ function setupSmoothScrolling() {
 
 
 // --- MAIN EXECUTION ---
-document.addEventListener('DOMContentLoaded', () => {
-    // Load reusable components from JS strings
-    loadComponents();
+document.addEventListener('DOMContentLoaded', async () => {
+    // Load reusable components from HTML files
+    await loadComponents();
 
     // Now that components are in the DOM, setup their dynamic parts and interactions
     renderTeamNav();
