@@ -6,7 +6,7 @@ window.TEAMS = [
         name: 'First Team',
         type: 'senior',
         league: 'Gloucestershire Northern Senior League Division 2',
-        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
+        lrcodes: { fixtures: '265597183', results: '616256420', table: '542423978', divisionseason: '462214142' },
         manager: { name: "Shaun Poole", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: 'Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
