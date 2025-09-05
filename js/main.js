@@ -8,11 +8,12 @@ window.TEAMS = [
         league: 'Gloucestershire Northern Senior League Division 2',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
         manager: { name: "Shaun Poole", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
-        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
-        training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
-        photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo', 'https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
+        kit: { home: 'Maroon & Blue', away: 'Blue' },
+        training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        photos: ['images/teams/2025-26-1st-Team.png'],
         sponsors: [
-            { name: "GLS Windows", logo: "images/sponsors/glswindows.png" }
+            { name: "GLS Windows", logo: "images/sponsors/glswindows.png" },
+            { name: "Severn Sport", logo: "images/sponsors/severnsport.png" }
         ]
     },
     {
@@ -22,11 +23,12 @@ window.TEAMS = [
         league: 'North Glos Division 1',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
         manager: { name: "Craig Broadman", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
-        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
-        training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        kit: { home: 'Blue', away: 'Maroon & Blue' },
+        training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
         sponsors: [
-            { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd.png" }
+            { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd.png" },
+            { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png" }
         ]
     },
     {
@@ -36,11 +38,12 @@ window.TEAMS = [
         league: 'North Glos Division 2',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
         manager: { name: "Jody Taylor", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
-        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
-        training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        kit: { home: 'Maroon', away: 'Blue' },
+        training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [],
         sponsors: [
-            { name: "Dean Electrical", logo: "images/sponsors/deanelectrical.png" }
+            { name: "Dean Electrical", logo: "images/sponsors/deanelectrical.png" },
+            { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw.png" }
         ]
     },
     {
@@ -50,8 +53,8 @@ window.TEAMS = [
         league: 'North Glos Division 3',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
         manager: { name: "Royston Baldwin", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
-        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
-        training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        kit: { home: 'Blue', away: 'Maroon' },
+        training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [],
         sponsors: []
     },
@@ -62,12 +65,18 @@ window.TEAMS = [
         league: 'Severn Valley League',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
         manager: { name: "Liam Davies", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
-        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
+        kit: { home: 'Maroon & Blue', away: '-' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
-        photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
+        photos: ['images/teams/2025-26-Youth-U11s.jpg'],
         sponsors: [
+            { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png" },
+            { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png",  },
             { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png" },
-            { name: "Cobus", logo: "images/sponsors/cobus.png" }
+            { name: "Cobus", logo: "images/sponsors/cobus.png" },
+            { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png",  },
+            { name: "Misty Windows", logo: "images/sponsors/mistywindows.png",  },
+            { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png",  },
+    
         ],
         newPlayerInfo: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch with the manager."
     },
@@ -101,6 +110,7 @@ window.SPONSORS = [
     { name: "Dean Electrical", logo: "images/sponsors/deanelectrical.png", type: "Platinum" },
     { name: "R&S Building Services Engineers", logo: "images/sponsors/rsbuildingservicesengineers.png", type: "Platinum" },
     { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png", type: "Platinum" },
+    { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png", type: "Platinum" },
     { name: "Severn Sport", logo: "images/sponsors/severnsport.png", type: "Standard" },
     { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png", type: "Standard" },
     { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw.png", type: "Standard" },
