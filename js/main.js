@@ -25,7 +25,7 @@ window.TEAMS = [
         manager: { name: "Craig Broadman", photo: "images/teams/person.png" },
         kit: { home: 'Blue', away: 'Maroon & Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
-        photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
+        photos: [],
         sponsors: [
             { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd.png" },
             { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png" }
