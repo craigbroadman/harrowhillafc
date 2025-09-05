@@ -4,32 +4,75 @@ window.TEAMS = [
     {
         id: 'firsts',
         name: 'First Team',
+        type: 'senior',
         league: 'Gloucestershire Northern Senior League Division 2',
-        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
+        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
+        manager: { name: "Shaun Poole", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
+        training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo', 'https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
+        sponsors: [
+            { name: "GLS Windows", logo: "https://via.placeholder.com/250x120/FFFFFF/1a202c?text=GLS+Windows" }
+        ]
     },
     {
         id: 'reserves',
         name: 'Reserves',
+        type: 'senior',
         league: 'North Glos Division 1',
-        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
+        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
+        manager: { name: "Craig Broadman", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
+        training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
+        sponsors: []
     },
     {
         id: 'a-team',
         name: 'A Team',
+        type: 'senior',
         league: 'North Glos Division 2',
-        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
+        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
+        manager: { name: "Jody Taylor", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
+        training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        photos: [],
+        sponsors: []
     },
     {
         id: 'b-team',
         name: 'B Team',
+        type: 'senior',
         league: 'North Glos Division 3',
-        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
+        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
+        manager: { name: "Royston Baldwin", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
+        training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        photos: [],
+        sponsors: []
     },
     {
         id: 'u11',
         name: 'U11 Youth Team',
+        type: 'youth',
         league: 'Severn Valley League',
-        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' }
+        lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
+        manager: { name: "Liam Davies", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
+        training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
+        photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
+        sponsors: [
+            { name: "SC Scaffolding", logo: "https://via.placeholder.com/150x80/FFFFFF/1a202c?text=SC+Scaffolding" },
+            { name: "Cobus", logo: "https://via.placeholder.com/150x80/FFFFFF/1a202c?text=Cobus" }
+        ],
+        newPlayerInfo: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch with the manager."
+    },
+    {
+        id: 'u12',
+        name: 'U12 Youth Team',
+        type: 'youth',
+        league: 'TBC',
+        status: 'coming-soon'
     }
 ];
 
@@ -119,7 +162,6 @@ async function loadComponents() {
     ]);
 }
 
-
 // --- SHARED RENDER FUNCTIONS ---
 
 function renderSponsors() {
@@ -147,24 +189,27 @@ function renderSponsors() {
     });
 }
 
-function renderTeamNav() {
-    const desktopContainer = document.getElementById('teams-dropdown-desktop');
-    const mobileContainer = document.getElementById('teams-dropdown-mobile');
-    if (!desktopContainer || !mobileContainer) return;
-
-    let teamLinks = '';
+function renderTeamNavs() {
     const pageMap = {
-        'firsts': 'first-team.html',
-        'reserves': 'reserve-team.html',
-        'a-team': 'a-team.html',
-        'b-team': 'b-team.html',
-        'u11': 'u11-team.html',
+        'firsts': 'first-team.html', 'reserves': 'reserve-team.html',
+        'a-team': 'a-team.html', 'b-team': 'b-team.html',
+        'u11': 'u11-team.html', 'u12': 'u12-team.html',
     };
-    window.TEAMS.forEach(team => {
-        teamLinks += `<a href="${pageMap[team.id]}" class="block px-4 py-2 text-sm hover:bg-gray-700">${team.name}</a>`;
-    });
-    desktopContainer.innerHTML = teamLinks;
-    mobileContainer.innerHTML = teamLinks;
+
+    const seniorTeams = window.TEAMS.filter(t => t.type === 'senior');
+    const youthTeams = window.TEAMS.filter(t => t.type === 'youth');
+
+    const createLinks = (teams) => teams.map(team => 
+        `<a href="${pageMap[team.id]}" class="block px-4 py-2 text-sm hover:bg-gray-700">${team.name}</a>`
+    ).join('');
+
+    // Desktop
+    document.getElementById('senior-teams-dropdown-desktop').innerHTML = createLinks(seniorTeams);
+    document.getElementById('youth-teams-dropdown-desktop').innerHTML = createLinks(youthTeams);
+    
+    // Mobile
+    document.getElementById('senior-teams-dropdown-mobile').innerHTML = createLinks(seniorTeams);
+    document.getElementById('youth-teams-dropdown-mobile').innerHTML = createLinks(youthTeams);
 }
 
 
@@ -173,43 +218,25 @@ function renderTeamNav() {
 function setupHeaderInteraction() {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-    const teamsMenuButtonMobile = document.getElementById('teams-menu-button-mobile');
-    const teamsDropdownMobileEl = document.getElementById('teams-dropdown-mobile');
-    
-    if (!mobileMenuButton || !mobileMenu || !teamsMenuButtonMobile || !teamsDropdownMobileEl) {
-        return;
-    }
-    const mobileChevron = teamsMenuButtonMobile.querySelector('svg');
+    if (!mobileMenuButton || !mobileMenu) return;
 
     mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
-    teamsMenuButtonMobile.addEventListener('click', () => {
-        teamsDropdownMobileEl.classList.toggle('hidden');
-        if(mobileChevron) mobileChevron.classList.toggle('rotate-180');
-    });
-}
-
-function setupSmoothScrolling() {
-    document.body.addEventListener('click', function (e) {
-        const link = e.target.closest('a');
-        
-        if (link) {
-            const href = link.getAttribute('href');
-            if (href && href.startsWith('#')) {
-                e.preventDefault();
-                const targetElement = document.querySelector(href);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            }
-             const mobileMenu = document.getElementById('mobile-menu');
-             if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                 mobileMenu.classList.add('hidden');
-             }
+    // Mobile dropdown toggles
+    const setupDropdown = (buttonId, dropdownId) => {
+        const button = document.getElementById(buttonId);
+        const dropdown = document.getElementById(dropdownId);
+        if (button && dropdown) {
+            const chevron = button.querySelector('svg');
+            button.addEventListener('click', () => {
+                dropdown.classList.toggle('hidden');
+                if(chevron) chevron.classList.toggle('rotate-180');
+            });
         }
-    });
+    };
+    setupDropdown('senior-teams-menu-button-mobile', 'senior-teams-dropdown-mobile');
+    setupDropdown('youth-teams-menu-button-mobile', 'youth-teams-dropdown-mobile');
 }
-
 
 // --- MAIN EXECUTION ---
 document.addEventListener('DOMContentLoaded', async () => {
@@ -217,10 +244,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadComponents();
 
     // Now that components are in the DOM, setup their dynamic parts and interactions
-    renderTeamNav();
+    renderTeamNavs();
     renderSponsors();
     setupHeaderInteraction();
-    setupSmoothScrolling();
     
     const copyrightYear = document.getElementById('copyright-year');
     if (copyrightYear) {

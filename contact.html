@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Harrow Hill AFC</title>
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32/6a0e1a/FFFFFF?text=H">
+    <meta name="description" content="Contact details, location, and map for Harrow Hill AFC.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'club-maroon': '#6a0e1a',
+                        'club-blue': '#a4c2de',
+                        'club-gold': '#d4af37',
+                        'club-navy': '#1a202c',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-club-navy text-gray-200 font-sans leading-normal tracking-normal">
+
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <main class="py-16 md:py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Contact & Find Us</h1>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Get in touch with the club or visit us on match day. All are welcome.</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                <!-- Left: Map -->
+                <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.534819777175!2d-2.55169888422606!3d51.84155197969176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871ba6722d431c9%3A0x6a0e50d60d3c35b3!2sHarrow%20Hill%20A.F.C.!5e0!3m2!1sen!2suk!4v1668269707166!5m2!1sen!2suk" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Right: Details -->
+                <div class="bg-gray-700 rounded-lg shadow-xl p-8 space-y-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-2">Our Address</h2>
+                        <p class="text-gray-300">Harrow Hill AFC</p>
+                        <p class="text-gray-300">Larksfield Rd, Harrow Hill</p>
+                        <p class="text-gray-300">Drybrook, GL17 9JP</p>
+                    </div>
+                     <div>
+                        <h2 class="text-2xl font-bold text-white mb-2">Clubhouse Phone</h2>
+                        <p class="text-gray-300">01594 543873</p>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-2">Parking Information</h2>
+                        <p class="text-gray-300">On-site parking is available at the ground. Please park considerately and follow any instructions from club officials on busy match days.</p>
+                    </div>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Harrow+Hill+AFC,+Larksfield+Rd,+Drybrook" target="_blank" rel="noopener"
+                        class="inline-block w-full text-center bg-club-maroon text-white font-bold py-3 px-6 rounded-lg hover:bg-red-800 transition duration-300">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer and common sections will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

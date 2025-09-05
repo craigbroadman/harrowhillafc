@@ -1,17 +1,23 @@
-<!-- Socials Section -->
+<!-- Socials Section with Facebook Feed -->
 <section id="socials" class="py-16 md:py-20 bg-gray-800">
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Follow Our Socials</h2>
-        <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Stay up-to-date with the latest news, matchday updates,
-            and behind-the-scenes content.</p>
-        <div class="flex justify-center items-center p-6 bg-white rounded-lg shadow-md max-w-lg mx-auto">
-            <img src="images/crest.png" alt="Club Crest"
-                class="h-16 w-16 rounded-full mr-4 border-2 border-gray-200">
-            <div class="text-left">
-                <h3 class="font-bold text-lg text-gray-900">Harrow Hill AFC</h3>
-                <p class="text-gray-600">Official Club Account</p>
-                <a href="https://www.facebook.com/HarrowHillAFC/" target="_blank" rel="noopener noreferrer"
-                    class="text-blue-600 hover:underline">Follow us on Facebook</a>
+        <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Stay up-to-date with the latest news, matchday updates, and behind-the-scenes content directly from our Facebook page.</p>
+        <div class="flex justify-center">
+            <div class="bg-white rounded-lg shadow-md p-2 max-w-lg w-full">
+                <div class="fb-page" 
+                     data-href="https://www.facebook.com/HarrowHillAFC" 
+                     data-tabs="timeline" 
+                     data-width="500" 
+                     data-height="600" 
+                     data-small-header="false" 
+                     data-adapt-container-width="true" 
+                     data-hide-cover="false" 
+                     data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/HarrowHillAFC" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/HarrowHillAFC">Harrow Hill AFC</a>
+                    </blockquote>
+                </div>
             </div>
         </div>
     </div>
@@ -38,6 +44,11 @@
 <!-- Footer -->
 <footer class="bg-gray-900 text-white">
     <div class="container mx-auto py-8 px-4 text-center">
+        <div class="mb-4">
+            <p class="font-semibold">Harrow Hill AFC</p>
+            <p class="text-gray-400">Larksfield Rd, Harrow Hill, Drybrook GL17 9JP</p>
+            <p class="text-gray-400">01594 543873</p>
+        </div>
         <div class="flex justify-center space-x-6 mb-4">
             <a href="https://www.facebook.com/HarrowHillAFC/" target="_blank" rel="noopener noreferrer"
                 aria-label="Facebook" class="text-gray-400 hover:text-white transition duration-300">
@@ -57,3 +68,7 @@
         <p class="text-gray-500">&copy; <span id="copyright-year"></span> Harrow Hill AFC. All Rights Reserved.</p>
     </div>
 </footer>
+
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="5V2iA1bN"></script>
