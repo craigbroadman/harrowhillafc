@@ -12,7 +12,7 @@ window.TEAMS = [
         training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo', 'https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
         sponsors: [
-            { name: "GLS Windows", logo: "https://via.placeholder.com/250x120/FFFFFF/1a202c?text=GLS+Windows" }
+            { name: "GLS Windows", logo: "images/sponsors/glswindows.png" }
         ]
     },
     {
@@ -25,7 +25,9 @@ window.TEAMS = [
         kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
         training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
-        sponsors: []
+        sponsors: [
+            { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd.png" }
+        ]
     },
     {
         id: 'a-team',
@@ -37,7 +39,9 @@ window.TEAMS = [
         kit: { home: 'Maroon & Blue', away: 'Yellow & Black' },
         training: { day: 'Tuesdays & Thursdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [],
-        sponsors: []
+        sponsors: [
+            { name: "Dean Electrical", logo: "images/sponsors/deanelectrical.png" }
+        ]
     },
     {
         id: 'b-team',
@@ -62,8 +66,8 @@ window.TEAMS = [
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
         sponsors: [
-            { name: "SC Scaffolding", logo: "https://via.placeholder.com/150x80/FFFFFF/1a202c?text=SC+Scaffolding" },
-            { name: "Cobus", logo: "https://via.placeholder.com/150x80/FFFFFF/1a202c?text=Cobus" }
+            { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png" },
+            { name: "Cobus", logo: "images/sponsors/cobus.png" }
         ],
         newPlayerInfo: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch with the manager."
     },
