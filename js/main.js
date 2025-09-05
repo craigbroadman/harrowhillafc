@@ -7,7 +7,7 @@ window.TEAMS = [
         type: 'senior',
         league: 'Gloucestershire Northern Senior League Division 2',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
-        manager: { name: "Shaun Poole", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        manager: { name: "Shaun Poole", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: 'Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: ['images/teams/2025-26-1st-Team.png'],
@@ -22,7 +22,7 @@ window.TEAMS = [
         type: 'senior',
         league: 'North Glos Division 1',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
-        manager: { name: "Craig Broadman", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        manager: { name: "Craig Broadman", photo: "images/teams/person.png" },
         kit: { home: 'Blue', away: 'Maroon & Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: ['https://via.placeholder.com/400x225/1a202c/FFFFFF?text=Team+Photo'],
@@ -37,7 +37,7 @@ window.TEAMS = [
         type: 'senior',
         league: 'North Glos Division 2',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
-        manager: { name: "Jody Taylor", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        manager: { name: "Jody Taylor", photo: "images/teams/person.png" },
         kit: { home: 'Maroon', away: 'Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [],
@@ -52,7 +52,7 @@ window.TEAMS = [
         type: 'senior',
         league: 'North Glos Division 3',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
-        manager: { name: "Royston Baldwin", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        manager: { name: "Royston Baldwin", photo: "images/teams/person.png" },
         kit: { home: 'Blue', away: 'Maroon' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [],
@@ -64,19 +64,18 @@ window.TEAMS = [
         type: 'youth',
         league: 'Severn Valley League',
         lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
-        manager: { name: "Liam Davies", photo: "https://via.placeholder.com/128/1a202c/FFFFFF?text=Manager" },
+        manager: { name: "Liam Davies", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: '-' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: ['images/teams/2025-26-Youth-U11s.jpg'],
         sponsors: [
             { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png" },
-            { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png",  },
+            { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png", },
             { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png" },
             { name: "Cobus", logo: "images/sponsors/cobus.png" },
-            { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png",  },
-            { name: "Misty Windows", logo: "images/sponsors/mistywindows.png",  },
-            { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png",  },
-    
+            { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", },
+            { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", },
+
         ],
         newPlayerInfo: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch with the manager."
     },
@@ -90,18 +89,30 @@ window.TEAMS = [
 ];
 
 window.COMMITTEE_MEMBERS = [
-    { name: "Sean Thomas", role: "Chairman & GNSL Secretary" }, { name: "Barry Boseley", role: "Vice Chairman" },
-    { name: "Andy Davies", role: "NGL Secretary" }, { name: "Kenny Mason", role: "Club Treasurer" },
-    { name: "Paul Jones", role: "Football Treasurer" }, { name: "Jo White", role: "Welfare Officer" },
-    { name: "Shaun Poole", role: "1st Team Manager" }, { name: "Craig Broadman", role: "Reserve Team Manager" },
-    { name: "Jody Taylor", role: "A Team Manager" }, { name: "Royston Baldwin", role: "B Team Manager" },
-    { name: "Liam Davies", role: "Youth Team" }, { name: "Roger Beckett", role: "Committee Member" },
-    { name: "Matthew Boseley", role: "Committee Member" }, { name: "Dan Boseley", role: "Committee Member" },
-    { name: "Donna Boseley", role: "Committee Member" }, { name: "Ben Carruthers", role: "Committee Member" },
-    { name: "Jade Davies", role: "Committee Member" }, { name: "Nick Hopkins", role: "Committee Member" },
-    { name: "Jordan Howard", role: "Committee Member" }, { name: "Meg Lewis", role: "Committee Member" },
-    { name: "Jack Mason", role: "Committee Member" }, { name: "Hayley Morgan", role: "Committee Member" },
-    { name: "Claire Partridge", role: "Committee Member" }, { name: "Sammy Taylor", role: "Committee Member" },
+    { name: "Sean Thomas", role: "Chairman & GNSL Secretary", isMainOfficial: true }, 
+    { name: "Andy Davies", role: "NGL Secretary", isMainOfficial: true }, 
+    { name: "Kenny Mason", role: "Club Treasurer", isMainOfficial: true },
+    { name: "Paul Jones", role: "Football Treasurer", isMainOfficial: true }, 
+    { name: "Jo White", role: "Welfare Officer", isMainOfficial: true },
+    { name: "Barry Boseley", role: "Vice Chairman" },
+    { name: "Roger Beckett", role: "Committee Member" },
+    { name: "Matthew Boseley", role: "Committee Member" }, 
+    { name: "Dan Boseley", role: "Committee Member" },
+    { name: "Donna Boseley", role: "Committee Member" }, 
+    { name: "Ben Carruthers", role: "Committee Member" },
+    { name: "Jade Davies", role: "Committee Member" }, 
+    { name: "Nick Hopkins", role: "Committee Member" },
+    { name: "Jordan Howard", role: "Committee Member" }, 
+    { name: "Meg Lewis", role: "Committee Member" },
+    { name: "Jack Mason", role: "Committee Member" }, 
+    { name: "Hayley Morgan", role: "Committee Member" },
+    { name: "Claire Partridge", role: "Committee Member" }, 
+    { name: "Sammy Taylor", role: "Committee Member" },
+    { name: "Shaun Poole", role: "1st Team Manager" }, 
+    { name: "Craig Broadman", role: "Reserve Team Manager" },
+    { name: "Jody Taylor", role: "A Team Manager" }, 
+    { name: "Royston Baldwin", role: "B Team Manager" },
+    { name: "Liam Davies", role: "U11 Youth Team Manager" }, 
 ];
 
 window.SPONSORS = [
@@ -169,7 +180,7 @@ async function loadComponents() {
             console.error(`Error fetching ${url}:`, error);
         }
     };
-    
+
     await Promise.all([
         load(headerPlaceholder, '_header.html'),
         load(footerPlaceholder, '_footer.html')
@@ -213,14 +224,14 @@ function renderTeamNavs() {
     const seniorTeams = window.TEAMS.filter(t => t.type === 'senior');
     const youthTeams = window.TEAMS.filter(t => t.type === 'youth');
 
-    const createLinks = (teams) => teams.map(team => 
+    const createLinks = (teams) => teams.map(team =>
         `<a href="${pageMap[team.id]}" class="block px-4 py-2 text-sm hover:bg-gray-700">${team.name}</a>`
     ).join('');
 
     // Desktop
     document.getElementById('senior-teams-dropdown-desktop').innerHTML = createLinks(seniorTeams);
     document.getElementById('youth-teams-dropdown-desktop').innerHTML = createLinks(youthTeams);
-    
+
     // Mobile
     document.getElementById('senior-teams-dropdown-mobile').innerHTML = createLinks(seniorTeams);
     document.getElementById('youth-teams-dropdown-mobile').innerHTML = createLinks(youthTeams);
@@ -244,7 +255,7 @@ function setupHeaderInteraction() {
             const chevron = button.querySelector('svg');
             button.addEventListener('click', () => {
                 dropdown.classList.toggle('hidden');
-                if(chevron) chevron.classList.toggle('rotate-180');
+                if (chevron) chevron.classList.toggle('rotate-180');
             });
         }
     };
@@ -261,7 +272,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderTeamNavs();
     renderSponsors();
     setupHeaderInteraction();
-    
+
     const copyrightYear = document.getElementById('copyright-year');
     if (copyrightYear) {
         copyrightYear.textContent = new Date().getFullYear();

@@ -1,8 +1,8 @@
 function renderCommittee(container) {
     if (!container) return;
-    const mainRoles = ["Chairman", "Vice Chairman", "Treasurer", "Welfare Officer", "Secretary"];
+    const mainRoles = ["Chairman & GNSL Secretary", "Treasurer", "Welfare Officer", "Secretary"];
     const managerRoles = ["Manager", "Youth Team"];
-    const isMainRole = member => mainRoles.some(role => member.role.toLowerCase().includes(role.toLowerCase()));
+    const isMainRole = member => mainRoles.some(role => member.isMainOfficial === true);
     const isManager = member => managerRoles.some(role => member.role.toLowerCase().includes(role.toLowerCase()));
     const isOther = member => !isMainRole(member) && !isManager(member);
 
@@ -25,9 +25,9 @@ function renderCommittee(container) {
     }
 
     container.innerHTML =
-        renderSection("Main Roles", mainRoleMembers) +
-        renderSection("Team Management", managerMembers) +
-        renderSection("Committee Members", otherMembers);
+        renderSection("Main Officials", mainRoleMembers) +
+        renderSection("Club Officials", otherMembers) +
+        renderSection("Team Management", managerMembers);
 }
 
 
