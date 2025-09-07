@@ -25,9 +25,9 @@ function renderCommittee(container) {
     }
 
     container.innerHTML =
-        renderSection("Main Officials", mainRoleMembers) +
+        renderSection("Key Officials", mainRoleMembers) +
         renderSection("Club Officials", otherMembers) +
-        renderSection("Team Management", managerMembers);
+        renderSection("The Managers", managerMembers);
 }
 
 

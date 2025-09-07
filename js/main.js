@@ -25,7 +25,7 @@ window.TEAMS = [
         manager: { name: "Craig Broadman", photo: "images/teams/person.png" },
         kit: { home: 'Blue', away: 'Maroon & Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
-        photos: [],
+        photos: [ 'images/teams/2025-26-Reserve-Team.png' ],
         sponsors: [
             { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd.png" },
             { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png" }
@@ -91,10 +91,10 @@ window.TEAMS = [
 window.COMMITTEE_MEMBERS = [
     { name: "Sean Thomas", role: "Chairman & GNSL Secretary", isMainOfficial: true }, 
     { name: "Andy Davies", role: "NGL Secretary", isMainOfficial: true }, 
-    { name: "Kenny Mason", role: "Club Treasurer", isMainOfficial: true },
-    { name: "Paul Jones", role: "Football Treasurer", isMainOfficial: true }, 
+    { name: "Paul Jones", role: "Treasurer", isMainOfficial: true }, 
     { name: "Jo White", role: "Welfare Officer", isMainOfficial: true },
     { name: "Barry Boseley", role: "Vice Chairman" },
+    { name: "Kenny Mason", role: "Social Club Treasurer" },
     { name: "Roger Beckett", role: "Committee Member" },
     { name: "Matthew Boseley", role: "Committee Member" }, 
     { name: "Dan Boseley", role: "Committee Member" },

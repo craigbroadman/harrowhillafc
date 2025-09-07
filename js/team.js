@@ -9,7 +9,7 @@ function getInfoContent(team) {
     }
 
     const photosHTML = team.photos && team.photos.length > 0
-        ? team.photos.map(photo => `<div class="p-2"><img src="${photo}" alt="${team.name} photo" class="rounded-lg shadow-lg w-full h-auto object-cover aspect-video"></div>`).join('')
+        ? team.photos.map(photo => `<div class="p-2"><img src="${photo}" alt="${team.name} photo" class="rounded-lg shadow-lg w-full"></div>`).join('')
         : '<p class="text-gray-400 p-2">No team photos available yet.</p>';
 
     const sponsorsHTML = team.sponsors && team.sponsors.length > 0
