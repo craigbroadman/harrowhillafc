@@ -6,6 +6,7 @@ function renderHomeTeamCards(container) {
         'a-team': 'a-team.html',
         'b-team': 'b-team.html',
         'u11': 'u11-team.html',
+        'u12': 'u12-team.html',
     };
     window.TEAMS.forEach(team => {
         const card = document.createElement('a');
