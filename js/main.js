@@ -75,6 +75,7 @@ window.TEAMS = [
             { name: "Cobus", logo: "images/sponsors/cobus.png" },
             { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", },
             { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", },
+            { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", },
 
         ],
         newPlayerInfo: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch with the manager."
@@ -155,6 +156,7 @@ window.SPONSORS = [
     { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", type: "Youth" },
     { name: "Cobus", logo: "images/sponsors/cobus.png", type: "Youth" },
     { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", type: "Youth" },
+    { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", type: "Youth" },
 ];
 
 
