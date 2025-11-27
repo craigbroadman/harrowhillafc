@@ -12,8 +12,8 @@ window.TEAMS = [
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: ['images/teams/2025-26-1st-Team.png'],
         sponsors: [
-            { name: "GLS Windows", logo: "images/sponsors/glswindows-white.png" },
-            { name: "Severn Sport", logo: "images/sponsors/severnsport-white.png" }
+            { name: "GLS Windows", logo: "images/sponsors/glswindows.png" },
+            { name: "Severn Sport", logo: "images/sponsors/severnsport.png" }
         ]
     },
     {
@@ -27,8 +27,8 @@ window.TEAMS = [
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [ 'images/teams/2025-26-Reserve-Team.png' ],
         sponsors: [
-            { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd-white.png" },
-            { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology-white.png" }
+            { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd.png" },
+            { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png" }
         ]
     },
     {
@@ -42,8 +42,8 @@ window.TEAMS = [
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [],
         sponsors: [
-            { name: "Dean Electrical", logo: "images/sponsors/deanelectrical-white.png" },
-            { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw-white.png" }
+            { name: "Dean Electrical", logo: "images/sponsors/deanelectrical.png" },
+            { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw.png" }
         ]
     },
     {
@@ -53,11 +53,11 @@ window.TEAMS = [
         league: 'North Glos Division 3',
         lrcodes: { fixtures: '885246073', results: '620295000', table: '1384130', divisionseason: '399928630' },
         manager: { name: "Royston Baldwin", photo: "images/teams/person.png" },
-        kit: { home: 'Blue', away: 'Maroon' },
+        kit: { home: 'Maroon', away: 'Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [],
         sponsors: [
-            { name: "GLS Windows", logo: "images/sponsors/jormaxwindbreaks-white.png" }
+            { name: "Jormax Windbreaks", logo: "images/sponsors/jormaxwindbreaks.png" }
         ]
     },
     {
@@ -71,13 +71,13 @@ window.TEAMS = [
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: ['images/teams/2025-26-Youth-U11s.jpg'],
         sponsors: [
-            { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding-white.png" },
-            { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating-white.png", },
-            { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding-white.png" },
-            { name: "Cobus", logo: "images/sponsors/cobus-white.png" },
-            { name: "Misty Windows", logo: "images/sponsors/mistywindows-white.png", },
-            { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy-white.png", },
-            { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry-white.png", },
+            { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png" },
+            { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png", },
+            { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png" },
+            { name: "Cobus", logo: "images/sponsors/cobus.png" },
+            { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", },
+            { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", },
+            { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", },
 
         ],
         newPlayerInfo: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch with the manager."
@@ -119,47 +119,47 @@ window.COMMITTEE_MEMBERS = [
 ];
 
 window.SPONSORS = [
-    { name: "GLS Windows", logo: "images/sponsors/glswindows-white.png", type: "Platinum" },
-    { name: "A.A. Kear Electrical Services Ltd", logo: "images/sponsors/aakearelectricalservicesltd-white.png", type: "Platinum" },
-    { name: "Dean Electrical", logo: "images/sponsors/deanelectrical-white.png", type: "Platinum" },
-    { name: "R&S Building Services Engineers", logo: "images/sponsors/rsbuildingservicesengineers-white.png", type: "Platinum" },
-    { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding-white.png", type: "Platinum" },
-    { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating-white.png", type: "Platinum" },
-    { name: "Jormax Windbreaks", logo: "images/sponsors/jormaxwindbreaks-white.png", type: "Platinum" },
-    { name: "Severn Sport", logo: "images/sponsors/severnsport-white.png", type: "Standard" },
-    { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology-white.png", type: "Standard" },
-    { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw-white.png", type: "Standard" },
-    { name: "Sparkpak", logo: "images/sponsors/sparkpak-white.png", type: "Standard" },
-    { name: "Silent Warrior Fitness", logo: "images/sponsors/silentwarriorfitness-white.png", type: "Standard" },
-    { name: "AJW Control Solutions Ltd", logo: "images/sponsors/ajwcontrolsolutionsltd-white.png", type: "Standard" },
-    { name: "SparkLED", logo: "images/sponsors/sparkled-white.png", type: "Standard" },
-    { name: "Cinderford Garden Centre at Slabs 2 U", logo: "images/sponsors/cinderfordgardencentreatslabs2u-white.png", type: "Standard" },
-    { name: "Forest Products", logo: "images/sponsors/forestproducts-white.png", type: "Standard" },
-    { name: "Nikki's Events", logo: "images/sponsors/nikkisevents-white.png", type: "Standard" },
-    { name: "Whitson Barber Shop", logo: "images/sponsors/whitsonbarbershop-white.png", type: "Standard" },
-    { name: "K30 Interior Contracts", logo: "images/sponsors/k30interiorcontracts-white.png", type: "Standard" },
-    { name: "Beard & Tandy Building Contractors", logo: "images/sponsors/beardtandybuildingcontractors-white.png", type: "Standard" },
-    { name: "TH White Agriculture", logo: "images/sponsors/thwhiteagriculture-white.png", type: "Standard" },
-    { name: "Gloucestershire College", logo: "images/sponsors/gloucestershirecollege-white.png", type: "Standard" },
-    { name: "A&H Jones Quality Butchers", logo: "images/sponsors/ahjonesqualitybutchers-white.png", type: "Standard" },
-    { name: "KAV Scaffolding", logo: "images/sponsors/kavscaffolding-white.png", type: "Standard" },
-    { name: "Andy Davies Chimney Sweep", logo: "images/sponsors/andydavieschimneysweep-white.png", type: "Standard" },
-    { name: "JT Heating and Maintenance", logo: "images/sponsors/jtheatingandmaintenance-white.png", type: "Standard" },
-    { name: "A.W. Parker Coal Merchant Ltd", logo: "images/sponsors/awparkercoalmerchantltd-white.png", type: "Standard" },
-    { name: "The Belfry", logo: "images/sponsors/thebelfry-white.png", type: "Standard" },
-    { name: "The Golden Lion", logo: "images/sponsors/thegoldenlion-white.png", type: "Standard" },
-    { name: "Forest Driving Range", logo: "images/sponsors/forestdrivingrange-white.png", type: "Standard" },
-    { name: "Plumbase Gloucester", logo: "images/sponsors/plumbasegloucester-white.png", type: "Standard" },
-    { name: "Camerons Quality Butchers", logo: "images/sponsors/cameronsqualitybutchers-white.png", type: "Standard" },
-    { name: "Crazy Daisy Balloons", logo: "images/sponsors/crazydaisyballoons-white.png", type: "Standard" },
-    { name: "MG Building Solutions", logo: "images/sponsors/mgbuildingsolutions-white.png", type: "Standard" },
-    { name: "MTB Plumbing and Heating", logo: "images/sponsors/mtbplumbingandheating-white.png", type: "Standard" },
-    { name: "The Looking Glass", logo: "images/sponsors/thelookingglass-white.png", type: "Standard" },
-    { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding-white.png", type: "Youth" },
-    { name: "Misty Windows", logo: "images/sponsors/mistywindows-white.png", type: "Youth" },
-    { name: "Cobus", logo: "images/sponsors/cobus-white.png", type: "Youth" },
-    { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy-white.png", type: "Youth" },
-    { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry-white.png", type: "Youth" },
+    { name: "GLS Windows", logo: "images/sponsors/glswindows.png", type: "Platinum" },
+    { name: "A.A. Kear Electrical Services Ltd", logo: "images/sponsors/aakearelectricalservicesltd.png", type: "Platinum" },
+    { name: "Dean Electrical", logo: "images/sponsors/deanelectrical.png", type: "Platinum" },
+    { name: "R&S Building Services Engineers", logo: "images/sponsors/rsbuildingservicesengineers.png", type: "Platinum" },
+    { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png", type: "Platinum" },
+    { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png", type: "Platinum" },
+    { name: "Jormax Windbreaks", logo: "images/sponsors/jormaxwindbreaks.png", type: "Platinum" },
+    { name: "Severn Sport", logo: "images/sponsors/severnsport.png", type: "Standard" },
+    { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png", type: "Standard" },
+    { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw.png", type: "Standard" },
+    { name: "Sparkpak", logo: "images/sponsors/sparkpak.png", type: "Standard" },
+    { name: "Silent Warrior Fitness", logo: "images/sponsors/silentwarriorfitness.png", type: "Standard" },
+    { name: "AJW Control Solutions Ltd", logo: "images/sponsors/ajwcontrolsolutionsltd.png", type: "Standard" },
+    { name: "SparkLED", logo: "images/sponsors/sparkled.png", type: "Standard" },
+    { name: "Cinderford Garden Centre at Slabs 2 U", logo: "images/sponsors/cinderfordgardencentreatslabs2u.png", type: "Standard" },
+    { name: "Forest Products", logo: "images/sponsors/forestproducts.png", type: "Standard" },
+    { name: "Nikki's Events", logo: "images/sponsors/nikkisevents.png", type: "Standard" },
+    { name: "Whitson Barber Shop", logo: "images/sponsors/whitsonbarbershop.png", type: "Standard" },
+    { name: "K30 Interior Contracts", logo: "images/sponsors/k30interiorcontracts.png", type: "Standard" },
+    { name: "Beard & Tandy Building Contractors", logo: "images/sponsors/beardtandybuildingcontractors.png", type: "Standard" },
+    { name: "TH White Agriculture", logo: "images/sponsors/thwhiteagriculture.png", type: "Standard" },
+    { name: "Gloucestershire College", logo: "images/sponsors/gloucestershirecollege.png", type: "Standard" },
+    { name: "A&H Jones Quality Butchers", logo: "images/sponsors/ahjonesqualitybutchers.png", type: "Standard" },
+    { name: "KAV Scaffolding", logo: "images/sponsors/kavscaffolding.png", type: "Standard" },
+    { name: "Andy Davies Chimney Sweep", logo: "images/sponsors/andydavieschimneysweep.png", type: "Standard" },
+    { name: "JT Heating and Maintenance", logo: "images/sponsors/jtheatingandmaintenance.png", type: "Standard" },
+    { name: "A.W. Parker Coal Merchant Ltd", logo: "images/sponsors/awparkercoalmerchantltd.png", type: "Standard" },
+    { name: "The Belfry", logo: "images/sponsors/thebelfry.png", type: "Standard" },
+    { name: "The Golden Lion", logo: "images/sponsors/thegoldenlion.png", type: "Standard" },
+    { name: "Forest Driving Range", logo: "images/sponsors/forestdrivingrange.png", type: "Standard" },
+    { name: "Plumbase Gloucester", logo: "images/sponsors/plumbasegloucester.png", type: "Standard" },
+    { name: "Camerons Quality Butchers", logo: "images/sponsors/cameronsqualitybutchers.png", type: "Standard" },
+    { name: "Crazy Daisy Balloons", logo: "images/sponsors/crazydaisyballoons.png", type: "Standard" },
+    { name: "MG Building Solutions", logo: "images/sponsors/mgbuildingsolutions.png", type: "Standard" },
+    { name: "MTB Plumbing and Heating", logo: "images/sponsors/mtbplumbingandheating.png", type: "Standard" },
+    { name: "The Looking Glass", logo: "images/sponsors/thelookingglass.png", type: "Standard" },
+    { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png", type: "Youth" },
+    { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", type: "Youth" },
+    { name: "Cobus", logo: "images/sponsors/cobus.png", type: "Youth" },
+    { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", type: "Youth" },
+    { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", type: "Youth" },
 ];
 
 

@@ -13,7 +13,7 @@ function getInfoContent(team) {
         : '<p class="text-gray-400 p-2">No team photos available yet.</p>';
 
     const sponsorsHTML = team.sponsors && team.sponsors.length > 0
-        ? team.sponsors.map(sponsor => `<div class="p-2"><img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-20 object-contain"></div>`).join('')
+        ? team.sponsors.map(sponsor => `<div class="p-2"><img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-32 object-contain"></div>`).join('')
         : '<p class="text-gray-400">This team is currently seeking a sponsor.</p>';
     
     const newPlayerInfoHTML = team.newPlayerInfo
@@ -38,8 +38,6 @@ function getInfoContent(team) {
                 <h4 class="text-xl font-bold text-white mb-4 border-b border-gray-600 pb-2">Team Details</h4>
                 <div class="space-y-3 text-gray-300">
                     <p><strong>Kit:</strong> ${team.kit.home} (Home), ${team.kit.away} (Away)</p>
-                    <p><strong>Training:</strong> ${team.training.day} at ${team.training.time}</p>
-                    <p><strong>Location:</strong> ${team.training.location}</p>
                 </div>
             </div>
         </div>
