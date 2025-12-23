@@ -16,11 +16,14 @@ function getInfoContent(team) {
         ? team.sponsors.map(sponsor => `<div class="p-2"><img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-32 object-contain"></div>`).join('')
         : '<p class="text-gray-400">This team is currently seeking a sponsor.</p>';
     
-    const newPlayerInfoHTML = team.newPlayerInfo
-        ? `<div class="bg-gray-900 bg-opacity-50 rounded-lg p-6 mt-6 text-center">
-             <h4 class="text-xl font-bold text-club-gold mb-2">New Players Welcome!</h4>
-             <p class="text-gray-300">${team.newPlayerInfo}</p>
-           </div>`
+    const newPlayerInfoHTML = team.registrationInfo
+        ? `<div class="bg-gray-700 p-6 rounded-lg shadow-xl text-left">
+                <h4 class="text-xl font-bold text-white mb-4 border-b border-gray-600 pb-2">${team.registrationInfo.title}</h4>
+                <div class="space-y-3 text-gray-300">
+                    <p>${team.registrationInfo.description}</p>
+                    <a href="${team.registrationInfo.formLink}" target="_blank" rel="noopener" class="inline-block bg-club-gold hover:bg-club-blue text-club-navy hover:text-club-navy font-bold py-3 px-6 rounded-lg transition-colors duration-200 mt-2">Register Your Interest</a>
+                </div>
+            </div>`
         : '';
 
     return `
@@ -33,6 +36,8 @@ function getInfoContent(team) {
                 <h3 class="text-2xl font-bold text-white">${team.manager.name}</h3>
                 <p class="text-club-gold">Team Manager</p>
             </div>
+            <!-- Registration Info Card -->
+            ${newPlayerInfoHTML}
             <!-- Details Card -->
             <div class="bg-gray-700 p-6 rounded-lg shadow-xl text-left">
                 <h4 class="text-xl font-bold text-white mb-4 border-b border-gray-600 pb-2">Team Details</h4>
@@ -60,7 +65,6 @@ function getInfoContent(team) {
             </div>
         </div>
     </div>
-    ${newPlayerInfoHTML}
     `;
 }
 

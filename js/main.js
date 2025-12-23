@@ -67,7 +67,7 @@ window.TEAMS = [
         league: 'Severn Valley League',
         // lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
         manager: { name: "Liam Davies", photo: "images/teams/person.png" },
-        kit: { home: 'Maroon & Blue', away: '-' },
+        kit: { home: 'Maroon & Blue', away: 'Maroon & Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: ['images/teams/2025-26-Youth-U11s.jpg'],
         sponsors: [
@@ -78,16 +78,26 @@ window.TEAMS = [
             { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", },
             { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", },
             { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", },
-
         ],
-        newPlayerInfo: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch with the manager."
+        registrationInfo: {
+            title: "U11 Team Registration",
+            description: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch.",
+            formLink: "https://forms.office.com/r/dN9tUPSsGy"
+        }
     },
     {
         id: 'u12',
         name: 'U12 Youth Team',
         type: 'youth',
         league: 'TBC',
-        status: 'coming-soon'
+        manager: { name: "Sean Thomas", photo: "images/teams/person.png" },
+        kit: { home: 'Maroon & Blue', away: 'Maroon & Blue' },
+        training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
+        registrationInfo: {
+            title: "U12 Team Registration",
+            description: "We are looking for new players to join our U12 team (current Y6 or Y7). If your child is interested in playing football in a fun and safe environment, please get in touch.",
+            formLink: "https://forms.office.com/r/dN9tUPSsGy"
+        }
     }
 ];
 
@@ -111,6 +121,8 @@ window.COMMITTEE_MEMBERS = [
     { name: "Hayley Morgan", role: "Committee Member" },
     { name: "Claire Partridge", role: "Committee Member" }, 
     { name: "Sammy Taylor", role: "Committee Member" },
+    { name: "Sam Marsh", role: "Committee Member" }, 
+    { name: "Ed Kirby", role: "Committee Member" }, 
     { name: "Shaun Poole", role: "1st Team Manager" }, 
     { name: "Craig Broadman", role: "Reserve Team Manager" },
     { name: "Jody Taylor", role: "A Team Manager" }, 
