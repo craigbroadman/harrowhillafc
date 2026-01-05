@@ -21,7 +21,7 @@ function getInfoContent(team) {
                 <h4 class="text-xl font-bold text-white mb-4 border-b border-gray-600 pb-2">${team.registrationInfo.title}</h4>
                 <div class="space-y-3 text-gray-300">
                     <p>${team.registrationInfo.description}</p>
-                    <a href="${team.registrationInfo.formLink}" target="_blank" rel="noopener" class="inline-block bg-club-gold hover:bg-club-blue text-club-navy hover:text-club-navy font-bold py-3 px-6 rounded-lg transition-colors duration-200 mt-2">Register Your Interest</a>
+                    <a href="${team.registrationInfo.formLink}" target="_blank" rel="noopener" class="inline-block bg-club-gold hover:bg-club-blue text-club-navy hover:text-club-navy font-bold py-3 px-6 rounded-lg transition-colors duration-200 mt-2">Registration Form</a>
                 </div>
             </div>`
         : '';

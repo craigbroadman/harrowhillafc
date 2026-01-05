@@ -82,7 +82,7 @@ window.TEAMS = [
         registrationInfo: {
             title: "U11 Team Registration",
             description: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch.",
-            formLink: "https://forms.office.com/r/dN9tUPSsGy"
+            formLink: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__swBe8JUOUFDTERSVlJKUjZXMUU4QjNVM05GQUVTRy4u"
         }
     },
     {
@@ -93,10 +93,13 @@ window.TEAMS = [
         manager: { name: "Sean Thomas", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: 'Maroon & Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
+        sponsors: [
+            { name: "Ontic Engineering & Manufacturing Ltd", logo: "images/sponsors/onticengineeringmanufacturingltd.png" },
+        ],
         registrationInfo: {
             title: "U12 Team Registration",
             description: "We are looking for new players to join our U12 team (current Y6 or Y7). If your child is interested in playing football in a fun and safe environment, please get in touch.",
-            formLink: "https://forms.office.com/r/dN9tUPSsGy"
+            formLink: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__swBe8JUOUFDTERSVlJKUjZXMUU4QjNVM05GQUVTRy4u"
         }
     }
 ];
@@ -138,6 +141,7 @@ window.SPONSORS = [
     { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png", type: "Platinum" },
     { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png", type: "Platinum" },
     { name: "Jormax Windbreaks", logo: "images/sponsors/jormaxwindbreaks.png", type: "Platinum" },
+    { name: "Ontic Engineering & Manufacturing Ltd", logo: "images/sponsors/onticengineeringmanufacturingltd.png", type: "Platinum" },
     { name: "Severn Sport", logo: "images/sponsors/severnsport.png", type: "Standard" },
     { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png", type: "Standard" },
     { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw.png", type: "Standard" },
