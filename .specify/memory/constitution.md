@@ -1,5 +1,14 @@
 <!--
 Sync Impact Report
+Version change: 1.1.0 -> 1.1.1
+Reason: Pre-existing debt item resolved — Tailwind CDN removed in feature 002-static-delivery-refactor.
+Modified sections:
+- v1.1.0 Sync Impact Report: updated Follow-up TODOs to mark Tailwind CDN item resolved
+No template changes required.
+-->
+
+<!--
+Sync Impact Report
 Version change: 1.0.0 -> 1.1.0
 Modified sections:
 - Delivery Constraints: added tech-stack constraints (vanilla JS, local images, no CDNs, no auth, no backend DB)
@@ -8,7 +17,7 @@ Templates requiring updates:
 - ✅ .specify/memory/project-context.md (new - baseline codebase snapshot)
 - ✅ .github/copilot-instructions.md (updated with project context)
 Follow-up TODOs:
-- Tailwind CSS is currently loaded via CDN in every HTML page (violates Constraint III below). Migrate to bundled/self-hosted before any production release.
+- ✅ Tailwind CSS CDN migration — resolved in feature 002-static-delivery-refactor.
 - vite.config.ts contains stale Gemini API references from an AI Studio template. Clean up before publishing.
 - index.tsx is empty. Remove or populate before publishing.
 -->
@@ -88,4 +97,4 @@ This constitution supersedes conflicting local process notes for planning, imple
 
 Versioning follows semantic versioning for governance: MAJOR for removing or materially redefining a principle, MINOR for adding a principle or materially expanding an enforceable requirement, and PATCH for clarifications that do not change expected behavior. Compliance review is required during planning, task generation, implementation review, and final validation for any change that affects code, content, or user-facing behavior.
 
-**Version**: 1.1.0 | **Ratified**: 2026-05-05 | **Last Amended**: 2026-05-05
+**Version**: 1.1.1 | **Ratified**: 2026-05-05 | **Last Amended**: 2026-05-05

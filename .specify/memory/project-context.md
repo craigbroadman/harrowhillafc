@@ -97,9 +97,11 @@ The footer (`_footer.html`) contains `#sponsors-grid-platinum` and `#sponsors-gr
 
 ## Design System
 
-All styling uses **Tailwind CSS utility classes**. Tailwind is currently loaded from the CDN (`https://cdn.tailwindcss.com`) in every HTML `<head>` — this is a known violation of Constitution constraint III and must be resolved before any production release.
+All styling uses **Tailwind CSS utility classes**. Tailwind is compiled from source via `tailwindcss` (v3) installed as a dev dependency, processed through Vite's PostCSS pipeline, and delivered as a locally-served stylesheet (`src/style.css` → hashed output in `dist/`). No CDN dependency at runtime.
 
-### Custom colour tokens (defined via `tailwind.config` inline script in each page)
+*Previously loaded from CDN — resolved in feature `002-static-delivery-refactor`.*
+
+### Custom colour tokens (defined once in `tailwind.config.js`)
 
 | Token | Hex |
 |-------|-----|
@@ -142,9 +144,11 @@ assets/
 
 | File | Purpose |
 |------|---------|
-| `vite.config.ts` | Vite entry-point config — currently contains stale Gemini API references from an AI Studio template; should be cleaned up |
+| `tailwind.config.js` | Tailwind configuration — custom colour tokens + content paths |
+| `postcss.config.js` | PostCSS pipeline — `tailwindcss` + `autoprefixer` |
+| `src/style.css` | Tailwind CSS entry point (`@tailwind` directives) |
+| `vite.config.ts` | Vite entry-point config — path alias `@` → root, `rollupOptions.input` for all 12 HTML pages |
 | `tsconfig.json` | TypeScript config for the Vite entry point |
-| `index.tsx` | Empty — leftover from AI Studio template; unused |
 | `package.json` | `npm run dev` (Vite dev server), `npm run build`, `npm run preview` |
 
 > Note: Most HTML pages do NOT use ES modules. Their `<script>` tags load `js/*.js` as classic scripts (no `type="module"`). Vite warns about this at build time but the build still succeeds. If pages are ever migrated to modules, the tab system's reliance on `window.TEAMS` globals must be revisited.
@@ -155,9 +159,6 @@ assets/
 
 | Issue | Location | Priority |
 |-------|----------|---------|
-| Tailwind loaded via CDN (violates Constitution III) | All HTML `<head>` sections | High — must fix before production |
-| Stale Gemini API config | `vite.config.ts` | Medium — clean up before publishing |
-| Empty `index.tsx` | root | Low — remove or populate |
 | Manager photos all use placeholder `person.png` | `window.TEAMS` entries | Low — replace with real photos when available |
 | U12 has no `lrcodes` (coming-soon state) | `js/main.js` | Expected — update when team enters league |
 
