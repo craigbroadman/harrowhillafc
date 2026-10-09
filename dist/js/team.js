@@ -1,3 +1,5 @@
+import './main.js';
+
 function getInfoContent(team) {
     if (team.status === 'coming-soon') {
         return `

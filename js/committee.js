@@ -1,3 +1,5 @@
+import './main.js';
+
 function renderCommittee(container) {
     if (!container) return;
     const mainRoles = ["Chairman & GNSL Secretary", "Treasurer", "Welfare Officer", "Secretary"];

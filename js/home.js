@@ -1,3 +1,5 @@
+import './main.js';
+
 function renderHomeTeamCards(container) {
     if (!container) return;
     const pageMap = {
