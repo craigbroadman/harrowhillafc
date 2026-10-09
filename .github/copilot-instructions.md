@@ -4,6 +4,8 @@ shell commands, and other important information, read the current plan.
 
 Read `.specify/memory/constitution.md` for governing principles.
 Read `.specify/memory/project-context.md` for the full baseline description of what already exists.
+
+Active feature plan: `specs/002-static-delivery-refactor/plan.md`
 <!-- SPECKIT END -->
 
 ## Project: Harrow Hill AFC Website
