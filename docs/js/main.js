@@ -1,5 +1,3 @@
-import '../src/style.css';
-
 // --- SHARED DATA ---
 // Placed on the window object to be accessible by other scripts.
 window.TEAMS = [
