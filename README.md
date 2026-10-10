@@ -7,8 +7,7 @@ Static multi-page website for Harrow Hill AFC covering club information, adult a
 - Static HTML pages at the repository root
 - Shared browser scripts in `js/`
 - Static assets in `images/` and `assets/`
-- Tailwind CSS v3 compiled via PostCSS (no CDN dependency)
-- Vite for dev server, production build, and CSS bundling
+- Vite and TypeScript for development tooling and bundled entry points
 
 ## Development
 

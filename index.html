@@ -8,7 +8,21 @@
     <link rel="icon" type="image/png" href="images/crest.png">
     <meta name="description"
         content="The official website for Harrow Hill AFC, providing fixtures, results, league tables, and club news.">
-    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'club-maroon': '#6a0e1a',
+                        'club-blue': '#a4c2de',
+                        'club-gold': '#d4af37',
+                        'club-navy': '#1a202c',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         .gradient-bg {
             background: radial-gradient(circle, rgba(45, 55, 72, 1) 0%, rgba(26, 32, 44, 1) 100%);
@@ -113,8 +127,8 @@
     <!-- Footer and common sections will be loaded here -->
     <div id="footer-placeholder"></div>
 
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/home.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>

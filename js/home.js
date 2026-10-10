@@ -1,5 +1,3 @@
-import './main.js';
-
 function renderHomeTeamCards(container) {
     if (!container) return;
     const pageMap = {
@@ -7,8 +5,8 @@ function renderHomeTeamCards(container) {
         'reserves': 'reserve-team.html',
         'a-team': 'a-team.html',
         'b-team': 'b-team.html',
+        'u11': 'u11-team.html',
         'u12': 'u12-team.html',
-        'u14': 'u14-team.html',
     };
     window.TEAMS.forEach(team => {
         const card = document.createElement('a');

@@ -7,7 +7,21 @@
     <title>Club Committee - Harrow Hill AFC</title>
     <link rel="icon" type="image/png" href="images/crest.png">
     <meta name="description" content="The official list of club committee members for Harrow Hill AFC.">
-    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'club-maroon': '#6a0e1a',
+                        'club-blue': '#a4c2de',
+                        'club-gold': '#d4af37',
+                        'club-navy': '#1a202c',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="bg-club-navy text-gray-200 font-sans leading-normal tracking-normal">
@@ -29,8 +43,8 @@
     <!-- Footer and common sections will be loaded here -->
     <div id="footer-placeholder"></div>
 
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/committee.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/committee.js"></script>
 </body>
 
 </html>
