@@ -10,7 +10,7 @@ window.TEAMS = [
         manager: { name: "Craig Broadman", photo: "images/teams/person.png" },
         assistant: { name: "Jamie Knight", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: 'Blue' },
-        training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        training: { day: 'Wednesdays', time: '8:00 PM', location: 'Cinderford RFC' },
         photos: ['images/teams/2026-27-1st-Team.png'],
         sponsors: [
             { name: "GLS Windows", logo: "images/sponsors/glswindows.png" },
@@ -27,7 +27,7 @@ window.TEAMS = [
         manager: { name: "Jody Taylor", photo: "images/teams/person.png" },
         assistant: { name: "James Turley", photo: "images/teams/person.png" },
         kit: { home: 'Blue', away: 'Maroon & Blue' },
-        training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        training: { day: 'Wednesdays', time: '8:00 PM', location: 'Cinderford RFC' },
         photos: [ 'images/teams/2025-26-Reserve-Team.png' ],
         sponsors: [
             { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd.png" },
@@ -43,7 +43,7 @@ window.TEAMS = [
         manager: { name: "Nick Hopkins", photo: "images/teams/person.png" },
         assistant: { name: "Liam Davies", photo: "images/teams/person.png" },
         kit: { home: 'Maroon', away: 'Blue' },
-        training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: [],
         sponsors: [
             { name: "Dean Electrical", logo: "images/sponsors/deanelectrical.png" },
@@ -57,8 +57,9 @@ window.TEAMS = [
         league: 'North Glos Division 3',
         faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=261341941&teamID=17011865',
         manager: { name: "Royston Baldwin", photo: "images/teams/person.png" },
+        assistant: { name: "Marc White", photo: "images/teams/person.png" },
         kit: { home: 'Maroon', away: 'Blue' },
-        training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
+        training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: [],
         sponsors: [
             { name: "Jormax Windbreaks", logo: "images/sponsors/jormaxwindbreaks.png" }
