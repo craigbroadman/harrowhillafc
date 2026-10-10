@@ -18,6 +18,8 @@ Static multi-page website for Harrow Hill AFC covering club information, adult a
 3. Create a production build with `npm run build`.
 4. Preview the production build with `npm run preview`.
 
+The build exports the static site into `dist/`, including the root HTML pages, shared partials, browser scripts, and asset folders used at runtime.
+
 ## Repository Layout
 
 - `_header.html` and `_footer.html` provide shared page chrome.

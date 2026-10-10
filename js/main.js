@@ -6,38 +6,42 @@ window.TEAMS = [
         name: 'First Team',
         type: 'senior',
         league: 'Gloucestershire Northern Senior League Division 2',
-        lrcodes: { fixtures: '265597183', results: '616256420', table: '542423978', divisionseason: '462214142' },
-        manager: { name: "Shaun Poole", photo: "images/teams/person.png" },
+        faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=148435583&teamID=117790708',
+        manager: { name: "Craig Broadman", photo: "images/teams/person.png" },
+        assistant: { name: "Jamie Knight", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: 'Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
-        photos: ['images/teams/2025-26-1st-Team.png'],
+        photos: ['images/teams/2026-27-1st-Team.png'],
         sponsors: [
             { name: "GLS Windows", logo: "images/sponsors/glswindows.png" },
-            { name: "Severn Sport", logo: "images/sponsors/severnsport.png" }
+            { name: "Severn Sport", logo: "images/sponsors/severnsport.png" },
+            { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png" }
         ]
     },
     {
         id: 'reserves',
         name: 'Reserves',
         type: 'senior',
-        league: 'North Glos Division 1',
-        lrcodes: { fixtures: '885246073', results: '620295000', table: '257439364', divisionseason: '789060406' },
-        manager: { name: "Craig Broadman", photo: "images/teams/person.png" },
+        league: 'North Glos Prem',
+        faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=944150717&teamID=972820636',
+        manager: { name: "Jody Taylor", photo: "images/teams/person.png" },
+        assistant: { name: "James Turley", photo: "images/teams/person.png" },
         kit: { home: 'Blue', away: 'Maroon & Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [ 'images/teams/2025-26-Reserve-Team.png' ],
         sponsors: [
             { name: "A.A. Kear", logo: "images/sponsors/aakearelectricalservicesltd.png" },
-            { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png" }
+            { name: "Invigor8 Reflexology", logo: "images/sponsors/invigor8reflexology.png" }
         ]
     },
     {
         id: 'a-team',
         name: 'A Team',
         type: 'senior',
-        league: 'North Glos Division 2',
-        lrcodes: { fixtures: '885246073', results: '620295000', table: '415439960', divisionseason: '450636774' },
-        manager: { name: "Jody Taylor", photo: "images/teams/person.png" },
+        league: 'North Glos Division 1',
+        faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=424335084&teamID=741549600',
+        manager: { name: "Nick Hopkins", photo: "images/teams/person.png" },
+        assistant: { name: "Liam Davies", photo: "images/teams/person.png" },
         kit: { home: 'Maroon', away: 'Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
         photos: [],
@@ -51,7 +55,7 @@ window.TEAMS = [
         name: 'B Team',
         type: 'senior',
         league: 'North Glos Division 3',
-        lrcodes: { fixtures: '885246073', results: '620295000', table: '1384130', divisionseason: '399928630' },
+        faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=261341941&teamID=17011865',
         manager: { name: "Royston Baldwin", photo: "images/teams/person.png" },
         kit: { home: 'Maroon', away: 'Blue' },
         training: { day: 'Tuesdays', time: '6:30 PM', location: 'Harrow Hill AFC' },
@@ -61,11 +65,11 @@ window.TEAMS = [
         ]
     },
     {
-        id: 'u11',
-        name: 'U11 Youth Team',
+        id: 'u12',
+        name: 'U12 Youth Team',
         type: 'youth',
-        league: 'Severn Valley League',
-        // lrcodes: { fixtures: '813726653', results: '377223783', table: '677575511', divisionseason: '462214142' },
+        league: 'Severn Valley Youth League',
+        faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=551017390&teamID=309504754',
         manager: { name: "Liam Davies", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: 'Maroon & Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
@@ -78,59 +82,67 @@ window.TEAMS = [
             { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", },
             { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", },
             { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", },
+            { name: "Lanes Health", logo: "images/sponsors/laneshealth.png" },
+            { name: "T&M Private Domiciliary Homecare", logo: "images/sponsors/tandmprivatedomiciliaryhomecare.png"},
         ],
         registrationInfo: {
-            title: "U11 Team Registration",
-            description: "We are always looking for new players to join our growing youth setup. If your child is interested in playing football in a fun and safe environment, please get in touch.",
+            title: "U12 Team Update",
+            description: "This age group has grown so quickly that we are now running two U12 groups. The extra demand has been brilliant for the club and we are continuing to build a fun, safe environment for local young players.",
             formLink: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__swBe8JUOUFDTERSVlJKUjZXMUU4QjNVM05GQUVTRy4u"
         }
     },
     {
-        id: 'u12',
-        name: 'U12 Youth Team',
+        id: 'u14',
+        name: 'U14 Youth Team',
         type: 'youth',
-        league: 'TBC',
+        league: 'Severn Valley Youth League',
+        faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=923844035&teamID=662092302',
         manager: { name: "Sean Thomas", photo: "images/teams/person.png" },
+        assistant: { name: "Craig Broadman", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: 'Maroon & Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
+        photos: ['images/teams/2026-27-U14s.jpg'],
         sponsors: [
             { name: "Ontic Engineering & Manufacturing Ltd", logo: "images/sponsors/onticengineeringmanufacturingltd.png" },
+            { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png" },
+            { name: "R&S Building Services Engineers", logo: "images/sponsors/rsbuildingservicesengineers.png" },
+            { name: "Gloucester Cleaning Solutions Ltd", logo: "images/sponsors/gloucestercleaningsolutionsltd.png" }
         ],
         registrationInfo: {
-            title: "U12 Team Registration",
-            description: "We are looking for new players to join our U12 team (current Y6 or Y7). If your child is interested in playing football in a fun and safe environment, please get in touch.",
-            formLink: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__swBe8JUOUFDTERSVlJKUjZXMUU4QjNVM05GQUVTRy4u"
+            title: "U14 Team Status",
+            description: "Our U14 squad is now full for the 2026/27 season.",
+            formLink: ""
         }
     }
 ];
 
 window.COMMITTEE_MEMBERS = [
-    { name: "Sean Thomas", role: "Chairman & GNSL Secretary", isMainOfficial: true }, 
+    { name: "Sean Thomas", role: "Chairman", isMainOfficial: true }, 
     { name: "Andy Davies", role: "NGL Secretary", isMainOfficial: true }, 
     { name: "Paul Jones", role: "Treasurer", isMainOfficial: true }, 
     { name: "Jo White", role: "Welfare Officer", isMainOfficial: true },
+    { name: "Jack Mason", role: "GNSL Secretary", isMainOfficial: true }, 
     { name: "Barry Boseley", role: "Vice Chairman" },
     { name: "Kenny Mason", role: "Social Club Treasurer" },
     { name: "Roger Beckett", role: "Committee Member" },
     { name: "Matthew Boseley", role: "Committee Member" }, 
     { name: "Dan Boseley", role: "Committee Member" },
     { name: "Donna Boseley", role: "Committee Member" }, 
-    { name: "Ben Carruthers", role: "Committee Member" },
     { name: "Jade Davies", role: "Committee Member" }, 
     { name: "Nick Hopkins", role: "Committee Member" },
     { name: "Jordan Howard", role: "Committee Member" }, 
     { name: "Meg Lewis", role: "Committee Member" },
-    { name: "Jack Mason", role: "Committee Member" }, 
     { name: "Hayley Morgan", role: "Committee Member" },
     { name: "Claire Partridge", role: "Committee Member" }, 
     { name: "Sammy Taylor", role: "Committee Member" },
     { name: "Sam Marsh", role: "Committee Member" }, 
     { name: "Ed Kirby", role: "Committee Member" }, 
-    { name: "Shaun Poole", role: "1st Team Manager" }, 
-    { name: "Craig Broadman", role: "Reserve Team Manager" },
-    { name: "Jody Taylor", role: "A Team Manager" }, 
+    { name: "Craig Broadman", role: "1st Team Manager" },
+    { name: "Jody Taylor", role: "Reserve Team Manager" },
+    { name: "Nick Hopkins", role: "A Team Manager" }, 
     { name: "Royston Baldwin", role: "B Team Manager" },
-    { name: "Liam Davies", role: "U11 Youth Team Manager" }, 
+    { name: "Liam Davies", role: "U12 Youth Team Manager" },
+    { name: "Sean Thomas", role: "U14 Youth Team Manager" },
 ];
 
 window.SPONSORS = [
@@ -143,18 +155,15 @@ window.SPONSORS = [
     { name: "Jormax Windbreaks", logo: "images/sponsors/jormaxwindbreaks.png", type: "Platinum" },
     { name: "Ontic Engineering & Manufacturing Ltd", logo: "images/sponsors/onticengineeringmanufacturingltd.png", type: "Platinum" },
     { name: "Severn Sport", logo: "images/sponsors/severnsport.png", type: "Standard" },
-    { name: "Vigor8 Reflexology", logo: "images/sponsors/vigor8reflexology.png", type: "Standard" },
+    { name: "Invigor8 Reflexology", logo: "images/sponsors/invigor8reflexology.png", type: "Standard" },
     { name: "Drew Property Law", logo: "images/sponsors/drewpropertylaw.png", type: "Standard" },
     { name: "Sparkpak", logo: "images/sponsors/sparkpak.png", type: "Standard" },
-    { name: "Silent Warrior Fitness", logo: "images/sponsors/silentwarriorfitness.png", type: "Standard" },
     { name: "AJW Control Solutions Ltd", logo: "images/sponsors/ajwcontrolsolutionsltd.png", type: "Standard" },
     { name: "SparkLED", logo: "images/sponsors/sparkled.png", type: "Standard" },
     { name: "Cinderford Garden Centre at Slabs 2 U", logo: "images/sponsors/cinderfordgardencentreatslabs2u.png", type: "Standard" },
     { name: "Forest Products", logo: "images/sponsors/forestproducts.png", type: "Standard" },
     { name: "Nikki's Events", logo: "images/sponsors/nikkisevents.png", type: "Standard" },
     { name: "Whitson Barber Shop", logo: "images/sponsors/whitsonbarbershop.png", type: "Standard" },
-    { name: "K30 Interior Contracts", logo: "images/sponsors/k30interiorcontracts.png", type: "Standard" },
-    { name: "Beard & Tandy Building Contractors", logo: "images/sponsors/beardtandybuildingcontractors.png", type: "Standard" },
     { name: "TH White Agriculture", logo: "images/sponsors/thwhiteagriculture.png", type: "Standard" },
     { name: "Gloucestershire College", logo: "images/sponsors/gloucestershirecollege.png", type: "Standard" },
     { name: "A&H Jones Quality Butchers", logo: "images/sponsors/ahjonesqualitybutchers.png", type: "Standard" },
@@ -163,19 +172,22 @@ window.SPONSORS = [
     { name: "JT Heating and Maintenance", logo: "images/sponsors/jtheatingandmaintenance.png", type: "Standard" },
     { name: "A.W. Parker Coal Merchant Ltd", logo: "images/sponsors/awparkercoalmerchantltd.png", type: "Standard" },
     { name: "The Belfry", logo: "images/sponsors/thebelfry.png", type: "Standard" },
-    { name: "The Golden Lion", logo: "images/sponsors/thegoldenlion.png", type: "Standard" },
     { name: "Forest Driving Range", logo: "images/sponsors/forestdrivingrange.png", type: "Standard" },
-    { name: "Plumbase Gloucester", logo: "images/sponsors/plumbasegloucester.png", type: "Standard" },
     { name: "Camerons Quality Butchers", logo: "images/sponsors/cameronsqualitybutchers.png", type: "Standard" },
     { name: "Crazy Daisy Balloons", logo: "images/sponsors/crazydaisyballoons.png", type: "Standard" },
     { name: "MG Building Solutions", logo: "images/sponsors/mgbuildingsolutions.png", type: "Standard" },
     { name: "MTB Plumbing and Heating", logo: "images/sponsors/mtbplumbingandheating.png", type: "Standard" },
     { name: "The Looking Glass", logo: "images/sponsors/thelookingglass.png", type: "Standard" },
+    { name: "MSK Therapy", logo: "images/sponsors/msktherapy.png", type: "Standard" },
+    { name: "Stock", logo: "images/sponsors/stock.png", type: "Standard" },
+    { name: "Gloucester Cleaning Solutions Ltd", logo: "images/sponsors/gloucestercleaningsolutionsltd.png", type: "Youth" },
     { name: "SC Scaffolding", logo: "images/sponsors/scscaffolding.png", type: "Youth" },
     { name: "Misty Windows", logo: "images/sponsors/mistywindows.png", type: "Youth" },
     { name: "Cobus", logo: "images/sponsors/cobus.png", type: "Youth" },
     { name: "Forest Phoenix Accountancy", logo: "images/sponsors/forestphoenixaccountancy.png", type: "Youth" },
     { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", type: "Youth" },
+    { name: "Lanes Health", logo: "images/sponsors/laneshealth.png", type: "Youth" },
+    { name: "T&M Private Domiciliary Homecare", logo: "images/sponsors/tandmprivatedomiciliaryhomecare.png", type: "Youth" },
 ];
 
 
@@ -222,7 +234,9 @@ function renderSponsors() {
     platinumSponsors.forEach(sponsor => {
         const div = document.createElement('div');
         div.className = "flex flex-col items-center";
-        div.innerHTML = `<img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-32 md:max-h-40 mb-1" style="object-fit:contain;">`;
+        div.innerHTML = sponsor.logo
+            ? `<img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-32 md:max-h-40 mb-1" style="object-fit:contain;">`
+            : `<div class="flex min-h-32 w-full max-w-[12rem] items-center justify-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-6 text-center text-sm font-semibold text-white md:min-h-40">${sponsor.name}</div>`;
         platinumContainer.appendChild(div);
     });
 
@@ -230,7 +244,9 @@ function renderSponsors() {
     otherSponsors.forEach(sponsor => {
         const div = document.createElement('div');
         div.className = "flex flex-col items-center";
-        div.innerHTML = `<img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-16 md:max-h-24 mb-1" style="object-fit:contain;">`;
+        div.innerHTML = sponsor.logo
+            ? `<img src="${sponsor.logo}" alt="${sponsor.name}" class="max-h-16 md:max-h-24 mb-1" style="object-fit:contain;">`
+            : `<div class="flex min-h-16 w-full max-w-[10rem] items-center justify-center rounded-lg border border-gray-600 bg-gray-800 px-3 py-4 text-center text-xs font-semibold text-white md:min-h-24 md:text-sm">${sponsor.name}</div>`;
         othersContainer.appendChild(div);
     });
 }
@@ -239,7 +255,7 @@ function renderTeamNavs() {
     const pageMap = {
         'firsts': 'first-team.html', 'reserves': 'reserve-team.html',
         'a-team': 'a-team.html', 'b-team': 'b-team.html',
-        'u11': 'u11-team.html', 'u12': 'u12-team.html',
+        'u12': 'u12-team.html', 'u14': 'u14-team.html',
     };
 
     const seniorTeams = window.TEAMS.filter(t => t.type === 'senior');
