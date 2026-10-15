@@ -1,3 +1,21 @@
+function groupStaffByRole(staff) {
+    const groups = [];
+    staff.forEach(member => {
+        const role = member.role || 'Coach';
+        let group = groups.find(g => g.role === role);
+        if (!group) {
+            group = { role, names: [] };
+            groups.push(group);
+        }
+        group.names.push(member.name);
+    });
+    return groups;
+}
+
+function pluraliseRole(role) {
+    return role.endsWith('s') ? role : `${role}s`;
+}
+
 function getInfoContent(team) {
     if (team.status === 'coming-soon') {
         return `
@@ -18,12 +36,12 @@ function getInfoContent(team) {
             : `<div class="flex min-h-32 min-w-[12rem] items-center justify-center rounded-lg border border-gray-600 bg-gray-800 px-4 py-6 text-center text-sm font-semibold text-white">${sponsor.name}</div>`).join('')
         : '<p class="text-gray-400">This team is currently seeking a sponsor.</p>';
 
-    const assistantHTML = team.assistant
-        ? `
+    const staffHTML = team.staff && team.staff.length > 0
+        ? groupStaffByRole(team.staff).map(group => `
             <div class="pt-4 mt-4 border-t border-gray-600">
-                <p class="text-sm uppercase tracking-wide text-gray-400">Assistant Manager</p>
-                <p class="text-xl font-semibold text-white mt-1">${team.assistant.name}</p>
-            </div>`
+                <p class="text-sm uppercase tracking-wide text-gray-400">${group.names.length > 1 ? pluraliseRole(group.role) : group.role}</p>
+                ${group.names.map(name => `<p class="text-xl font-semibold text-white mt-1">${name}</p>`).join('')}
+            </div>`).join('')
         : '';
 
     const faLinkHTML = team.faFullTimeUrl
@@ -54,7 +72,7 @@ function getInfoContent(team) {
                 <img src="${team.manager.photo}" alt="${team.manager.name}" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-club-gold">
                 <h3 class="text-2xl font-bold text-white">${team.manager.name}</h3>
                 <p class="text-club-gold">Team Manager</p>
-                ${assistantHTML}
+                ${staffHTML}
             </div>
             <!-- Registration Info Card -->
             ${newPlayerInfoHTML}

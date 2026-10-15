@@ -47,7 +47,7 @@ Each team object has:
   league: string,
   faFullTimeUrl?: string,
   manager: { name: string, photo: string },
-  assistant?: { name: string, photo: string },
+  staff?: Array<{ name: string, role: string }>, // e.g. 'Assistant Manager', 'Coach'
   kit: { home: string, away: string },
   training: { day: string, time: string, location: string },
   photos: string[],     // relative paths, e.g. 'images/teams/2025-26-1st-Team.png'

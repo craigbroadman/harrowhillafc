@@ -8,7 +8,9 @@ window.TEAMS = [
         league: 'Gloucestershire Northern Senior League Division 2',
         faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=148435583&teamID=117790708',
         manager: { name: "Craig Broadman", photo: "images/teams/person.png" },
-        assistant: { name: "Jamie Knight", photo: "images/teams/person.png" },
+        staff: [
+            { name: "Jamie Knight", role: "Assistant Manager" }
+        ],
         kit: { home: 'Maroon & Blue', away: 'Blue' },
         training: { day: 'Wednesdays', time: '8:00 PM', location: 'Cinderford RFC' },
         photos: ['images/teams/2026-27-1st-Team.png'],
@@ -25,7 +27,9 @@ window.TEAMS = [
         league: 'North Glos Prem',
         faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=944150717&teamID=972820636',
         manager: { name: "Jody Taylor", photo: "images/teams/person.png" },
-        assistant: { name: "James Turley", photo: "images/teams/person.png" },
+        staff: [
+            { name: "James Turley", role: "Assistant Manager" }
+        ],
         kit: { home: 'Blue', away: 'Maroon & Blue' },
         training: { day: 'Wednesdays', time: '8:00 PM', location: 'Cinderford RFC' },
         photos: [ 'images/teams/2025-26-Reserve-Team.png' ],
@@ -41,7 +45,10 @@ window.TEAMS = [
         league: 'North Glos Division 1',
         faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=424335084&teamID=741549600',
         manager: { name: "Nick Hopkins", photo: "images/teams/person.png" },
-        assistant: { name: "Liam Davies + Mike Meleuki", photo: "images/teams/person.png" },
+        staff: [
+            { name: "Liam Davies", role: "Assistant Manager" },
+            { name: "Mike Meleuki", role: "Assistant Manager" }
+        ],
         kit: { home: 'Maroon', away: 'Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: [],
@@ -57,7 +64,9 @@ window.TEAMS = [
         league: 'North Glos Division 3',
         faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=261341941&teamID=17011865',
         manager: { name: "Royston Baldwin", photo: "images/teams/person.png" },
-        assistant: { name: "Dave Edwards", photo: "images/teams/person.png" },
+        staff: [
+            { name: "Dave Edwards", role: "Assistant Manager" }
+        ],
         kit: { home: 'Maroon', away: 'Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: [],
@@ -72,10 +81,14 @@ window.TEAMS = [
         league: 'Severn Valley Youth League',
         faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=551017390&teamID=309504754',
         manager: { name: "Liam Davies", photo: "images/teams/person.png" },
-        assistant: { name: "Scott Cripwell. Mike Matthews (Coach) and Jacob Rodway (Coach)", photo: "images/teams/person.png" },
+        staff: [
+            { name: "Scott Cripwell", role: "Assistant Manager" },
+            { name: "Mike Matthews", role: "Coach" },
+            { name: "Jacob Rodway", role: "Coach" }
+        ],
         kit: { home: 'Maroon & Blue', away: 'Pink & Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
-        photos: ['images/teams/2026-27-U12s.jpg'],
+        photos: ['images/teams/2026-27-U12s.jpeg'],
         sponsors: [
             { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png" },
             { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png", },
@@ -101,7 +114,9 @@ window.TEAMS = [
         league: 'Severn Valley Youth League',
         faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=923844035&teamID=662092302',
         manager: { name: "Sean Thomas", photo: "images/teams/person.png" },
-        assistant: { name: "Craig Broadman", photo: "images/teams/person.png" },
+        staff: [
+            { name: "Craig Broadman", role: "Assistant Manager" }
+        ],
         kit: { home: 'Maroon & Blue', away: 'Maroon & Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
         photos: ['images/teams/2026-27-U14s.jpg'],
