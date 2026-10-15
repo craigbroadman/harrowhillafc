@@ -72,9 +72,10 @@ window.TEAMS = [
         league: 'Severn Valley Youth League',
         faFullTimeUrl: 'https://fulltime.thefa.com/displayTeam.html?divisionseason=551017390&teamID=309504754',
         manager: { name: "Liam Davies", photo: "images/teams/person.png" },
+        assistant: { name: "Scott Cripwell. Mike Matthews (Coach) and Jacob Rodway (Coach)", photo: "images/teams/person.png" },
         kit: { home: 'Maroon & Blue', away: 'Pink & Blue' },
         training: { day: 'Wednesdays', time: '6:00 PM', location: 'Harrow Hill AFC' },
-        photos: ['images/teams/2025-26-Youth-U11s.jpg'],
+        photos: ['images/teams/2026-27-U12s.jpg'],
         sponsors: [
             { name: "Wyedean Scaffolding", logo: "images/sponsors/wyedeanscaffolding.png" },
             { name: "Pollocks plumbing and heating", logo: "images/sponsors/pollocksplumbingandheating.png", },
@@ -85,6 +86,7 @@ window.TEAMS = [
             { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", },
             { name: "Lanes Health", logo: "images/sponsors/laneshealth.png" },
             { name: "T&M Private Domiciliary Homecare", logo: "images/sponsors/tandmprivatedomiciliaryhomecare.png"},
+            { name: "Burford Building Contractors", logo: "images/sponsors/burfordbuildingcontractors.jpeg"},
         ],
         registrationInfo: {
             title: "U12 Team Update",
@@ -189,6 +191,7 @@ window.SPONSORS = [
     { name: "DTS Carpentry", logo: "images/sponsors/dtscarpentry.png", type: "Youth" },
     { name: "Lanes Health", logo: "images/sponsors/laneshealth.png", type: "Youth" },
     { name: "T&M Private Domiciliary Homecare", logo: "images/sponsors/tandmprivatedomiciliaryhomecare.png", type: "Youth" },
+    { name: "Burford Building Contractors", logo: "images/sponsors/burfordbuildingcontractors.jpeg", type: "Youth" },
 ];
 
 
